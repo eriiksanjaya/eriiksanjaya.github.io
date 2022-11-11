@@ -1,0 +1,32 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss ./src/tailwind.css -o assets/app.css --minify",
+    "dev": "npx tailwindcss ./src/tailwind.css -o assets/app.css --watch",
+    "jsw": "watchify ./src/app.js -o ./assets/app.js",
+    "js": "browserify ./src/app.js | uglifyjs > ./assets/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "crypto-js": "^4.1.1",
+    "jquery-pjax": "^2.0.1",
+    "moment": "^2.29.4",
+    "moment-hijri": "^2.1.2",
+    "pjax": "^0.2.8",
+    "prayer-times.js": "^1.6.9",
+    "watchify": "^4.0.0"
+  }
+}

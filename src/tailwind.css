@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#qr-reader__header_message {
+  background-color: transparent !important;
+}
+
+#qr-reader,
+#qr-reader__header_message {
+  border: none !important;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+  text-decoration: none !important;
+}
+
+#html5-qrcode-button-camera-stop {
+  color: rgb(197, 197, 211) !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgb(44, 46, 99);
+  border-radius: 0.375rem;
+  /* width: 100%; */
+  width: max-content;
+  margin-bottom: 20px !important;
+}
+
+#html5-qrcode-button-camera-start {
+  color: rgb(197, 197, 211) !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgb(44, 46, 99);
+  border-radius: 0.375rem;
+  /* width: 100%; */
+  width: max-content;
+  margin-bottom: 20px !important;
+  margin-top: -10px !important;
+  margin-right: 10px !important;
+}
+
+#html5-qrcode-button-camera-permission {
+  color: rgb(197, 197, 211) !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgb(44, 46, 99);
+  border-radius: 0.375rem;
+  /* width: 100%; */
+  width: max-content;
+  margin-bottom: 20px !important;
+  margin-top: -10px !important;
+}
+
+#html5-qrcode-button-file-selection {
+  color: rgb(197, 197, 211) !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgb(44, 46, 99);
+  border-radius: 0.375rem;
+  /* width: 100%; */
+  width: max-content;
+  margin-bottom: 20px !important;
+  margin-top: -10px !important;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+  color: rgb(197, 197, 211) !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: rgb(44, 46, 99);
+  border-radius: 0.375rem;
+  /* width: 100%; */
+  width: max-content;
+  margin-bottom: 20px !important;
+  margin-top: -10px !important;
+}
