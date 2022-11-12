@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <style>
+        div.css, div.js, div.json {
+            white-space: pre;
+        }
+    </style>
+
     <title>Document</title>
 </head>
 <body>
-    <h1>Coming soon</h1>
+    <div class="flex justify-center items-center w-full">
+        <div class="space-y-1 justify-center items-center w-8/12">
+
+            <div class="json language-json">
+                const style =  {
+                    popup: {
+                        background: {
+                            container: "amethyst-600",
+                            header: "amethyst-200",
+                            content: "navy-900",
+                        },
+                        judul: "amber-500",
+                        deskripsi: "slate-300",
+                        tombol_tutup : {
+                            background: ["amber-600","amber-700"],
+                            text: "slate-50"
+                        }
+                    },
+            </div>
+            
+            <div class="js language-js">
+                let textError = document.querySelectorAll('.textError')
+                for (let i = 0; i < textError.length; i++) {
+                    textError[i].classList.add(`text-${style.form.error}`);
+                }
+            </div>
+
+            <div class="css language-css">
+                @font-face {
+                    font-family: Chunkfive; src: url('Chunkfive.otf');
+                }
+                    
+                body, .usertext {
+                    color: #F0F0F0; background: #600;
+                    font-family: Chunkfive, sans;
+                    --heading-1: 30px/32px Helvetica, sans-serif;
+                }
+                    
+                @import url(print.css);
+                    @media print {
+                    a[href^=http]::after {
+                        content: attr(href)
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/app.js"></script>
 </body>
 </html>

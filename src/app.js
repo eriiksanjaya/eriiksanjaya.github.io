@@ -1,6 +1,27 @@
+const css = require('highlight.js/lib/core');
+css.registerLanguage('css', require('highlight.js/lib/languages/css.js'));
+
+const json = require('highlight.js/lib/core');
+json.registerLanguage('json', require('highlight.js/lib/languages/json.js'));
+
+const js = require('highlight.js/lib/core');
+js.registerLanguage('js', require('highlight.js/lib/languages/javascript.js'));
+
 var AES = require("crypto-js/aes");
 var utf8 = require("crypto-js/enc-utf8");
 
+document.querySelectorAll('div.css').forEach(el => {
+    css.highlightElement(el);
+  });
+  
+  document.querySelectorAll('div.js').forEach(el => {
+    js.highlightElement(el);
+  });
+
+  document.querySelectorAll('div.json').forEach(el => {
+    json.highlightElement(el);
+  });
+  
 const eW = text => {
     return AES.encrypt(text, "Bismillah").toString()
 };
