@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0e1538" />
+	<link rel="icon" type="image/x-icon" href="./public/icon/favicon.ico">
+	<link href="./assets/app.css?v=10" type="text/css" rel="stylesheet">	
+    <title>camp</title>
+</head>
+<body>
+	<div class="flex flex-col bg-white p-1 rounded-md">
+		<video id="videoElement" autoplay class="rounded-md"></video>
+		<canvas id="canvasElement" style="display: none;"></canvas>
+		<p id="qrNotif" class="text-center text-slate-700"></p>
+	</div>
+					
+	<script src="./assets/jsQR.js"></script>
+	<script>
+
+		let qrNotif = document.getElementById("qrNotif");
+		
+		const video = document.getElementById("videoElement");
+		const canvas = document.getElementById("canvasElement");
+		const context = canvas.getContext("2d");
+
+		// Variabel kontrol pemindaian
+		let scanning = true;
+
+		// Minta izin pengguna untuk menggunakan kamera
+		navigator.mediaDevices
+			.getUserMedia({ video: true })
+			.then(function (stream) {
+			// Menampilkan video dari kamera ke elemen video
+			video.srcObject = stream;
+			})
+			.catch(function (err) {
+			qrNotif.innerText = "Tidak dapat mengakses kamera: " + err; // Menampilkan notifikasi ketidakberhasilan akses kamera
+			});
+
+		// Memindai QR code sekali ketika frame diperbarui
+		function scanQRCode() {
+			// Menggambar video frame ke dalam elemen canvas
+			context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+			// Membuat objek gambar baru untuk memindai QR code
+			const image = new Image();
+
+			// Menunggu gambar dimuat sebelum memindai QR code
+			image.onload = function () {
+			if (!scanning) {
+				return; // Menghentikan pemindaian jika scanning = false
+			}
+
+			const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+			const qrCodeResult = jsQR(
+				imageData.data,
+				imageData.width,
+				imageData.height
+			); // Melakukan pemindaian QR code pada gambar
+
+			// Menggunakan hasil pemindaian QR code
+			if (qrCodeResult) {
+				const qrCodeData = qrCodeResult.data;
+				if (isURL(qrCodeData)) {
+				qrNotif.innerText = "URL QR code: " + qrCodeData; // Menampilkan notifikasi URL QR code
+				scanning = false; // Menghentikan pemindaian setelah QR code terdeteksi
+				window.location.href = qrCodeData; // Mengarahkan ke URL QR code
+				} else {
+				qrNotif.innerText =
+					"QR code tidak berupa URL. Melakukan pemindaian ulang."; // Menampilkan notifikasi pemindaian ulang
+				setTimeout(scanQRCode, 1000); // Pemindaian ulang setelah 1 detik
+				}
+			} else {
+				qrNotif.innerText = "Tidak dapat membaca QR code"; // Menampilkan notifikasi ketidakberhasilan pembacaan QR code
+				setTimeout(scanQRCode, 1000); // Pemindaian ulang setelah 1 detik
+			}
+			};
+
+			// Mengatur sumber gambar sebagai data dari elemen canvas
+			image.src = canvas.toDataURL("image/png");
+		}
+
+		// Fungsi untuk memeriksa apakah suatu string adalah URL
+		function isURL(str) {
+			const urlPattern =
+			/^(https?:\/\/)?([\w.]+)\.([a-z]{2,6}\.?)(\/[\w .-]*)*\/?$/;
+			return urlPattern.test(str);
+		}
+
+		// Memulai pemindaian QR code
+		scanQRCode();
+	</script>
+	
+</body>
+</html>
