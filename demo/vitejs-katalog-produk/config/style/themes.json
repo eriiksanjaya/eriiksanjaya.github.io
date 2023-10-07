@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Theme 1",
+        "background": { 
+            "rotate": 40,
+            "body": ["#1e293b", "#0f172a"],
+            "container": ["#38bdf8", "#67e8f9"]
+        },
+        "navbar": { 
+            "bg": {
+                "backDropBlur": 1,
+                "rotate": 90,
+                "bgColor": ["#f8fafc", "#f8fafc"]
+            },
+            "title": "#0f172a",
+            "slogan": "#0f172a"
+        },
+        "quickMenu": { 
+            "rotate": 90,
+            "bgIcon": ["#f8fafc", "#f8fafc"],
+            "iconColor": null,
+            "color": "#0f172a"
+        },
+        "avatar": { 
+            "ring": "#7c3aed"
+        },
+        "card": { 
+            "rotate": 90,
+            "bg": ["#f8fafc", "#f8fafc"],
+            "color": "#334155",
+            "linkColor": "#3b82f6"
+        },
+        "input": {
+            "color": "#0f172a",
+            "border": "#0f172a",
+            "activeBorder": "#3b82f6"
+        },
+        "button": { 
+            "rotate": 90,
+            "bg": ["#1e3a8a", "#1e3a8a"],
+            "hover": ["#1e40af", "#1e40af"],
+            "color": "#f8fafc"
+        },
+        "horizontalLine": { 
+            "color": "#64748b"
+        },
+        "menuBottom": {
+            "rotate": 45,
+            "bg": "#f8fafc",
+            "color": "#334155",
+            "activeColor": "#1e3a8a",
+            "iconColor": null,
+            "badge": {
+                "bg": "#ec4899",
+                "color": "#f8fafc"
+            }
+        },
+        "dataPackage": { 
+            "title": "#334155"
+        },
+        "pulsa": { 
+            "title": "#334155"
+        },
+        "cart": { 
+            "title": "#334155",
+            "button": {
+                "add": "#22c55e",
+                "subtract": "#64748b"
+            },
+            "icon": {
+                "trash": "#ef4444"
+            }
+        },
+        "profile": { 
+            "title": "#334155"
+        },
+
+        "info": { 
+            "title": "#f8fafc"
+        },
+        "store": { 
+            "title": "#f8fafc"
+        }
+    }
+]

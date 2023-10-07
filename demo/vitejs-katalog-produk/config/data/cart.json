@@ -1,0 +1,20 @@
+{
+    "buttonOrder": {
+        "url": "https://wa.me/6289600000000",
+        "text": "Beli"
+    },
+    
+    "label": {
+        "menu": "Cart",
+        "title": "Cart",
+        "totalPrice": "Total Harga",
+        "buyyerData": {
+            "title": "Data Pembeli",
+            "name": "Nama",
+            "note": "Catatan"
+        },
+        "alert": {
+            "name": "Masukkan nama anda"
+        }
+    }
+}

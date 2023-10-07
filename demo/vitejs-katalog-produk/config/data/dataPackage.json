@@ -1,0 +1,65 @@
+{
+    "status": 1,
+
+    "buttonOrder": {
+        "status": 1,
+        "url": "https://eriksanjaya.mayar.link/catalog/source-code-katalog-produk-dengan-vitejs-html-vanilla-js-dan-tailwind-css",
+        "text": "Beli"
+    },
+
+    "label": {
+        "menu": "Beli Paket",
+        "title": "Beli Paket",
+        "linkSeeAll": "Lihat semuanya"
+    },
+
+    "displayAtHome": {
+        "status": 1,
+        "limit": 3
+    },
+    
+    "data": [
+        {
+            "name": "Paket A",
+            "description": "Aktif 24 Jam",
+            "price": "5000",
+            "bgColor": "#f9a8d4",
+            "color": "#334155"
+        },
+        {
+            "name": "Paket B",
+            "description": "Aktif 3 Hari",
+            "price": "10000",
+            "bgColor": "#93c5fd",
+            "color": "#334155"
+        },
+        {
+            "name": "Paket C",
+            "description": "Aktif 7 Hari",
+            "price": "15000",
+            "bgColor": "#c4b5fd",
+            "color": "#334155"
+        },
+        {
+            "name": "Paket C",
+            "description": "Aktif 10 Hari",
+            "price": "20000",
+            "bgColor": "#bef264",
+            "color": "#334155"
+        },
+        {
+            "name": "Paket D",
+            "description": "Aktif 15 Hari",
+            "price": "25000",
+            "bgColor": "#86efac",
+            "color": "#334155"
+        },
+        {
+            "name": "Paket E",
+            "description": "Aktif 30 Hari",
+            "price": "50000",
+            "bgColor": "#5eead4",
+            "color": "#334155"
+        }
+    ]
+}

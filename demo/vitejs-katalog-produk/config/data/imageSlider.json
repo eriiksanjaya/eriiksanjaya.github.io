@@ -1,0 +1,12 @@
+{
+    "status": 1,
+    "delay": 3,
+    "data": [
+        {
+            "url": "./image/slide-1.webp"
+        },
+        {
+            "url": "./image/slide-2.webp"
+        }
+    ]
+}
