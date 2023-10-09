@@ -10,107 +10,11 @@
     <script type="module" crossorigin src="./assets/main-4108bd29.js"></script>
     <link rel="stylesheet" href="./assets/index-46a70e88.css">
   </head>
-  <body class="bg-[#191E24] text-slate-700 antialiased flex flex-col w-full justify-center items-center">
-    
-    <div id="app" class="flex flex-col w-full h-max pt-16 md:w-[50%] xl:w-[35%] justify-center">
-      
-      <div id="navbar"></div>
-      <div id="slider"></div>
-      <div id="quickMenu"></div>
+  <body>
 
-      <div class="p-5 pb-28">
-        
-        <div id="tab1" class="tab">
-          <div class="w-full flex flex-col space-y-3">
-            <div id="diskon"></div>
-            <div id="buySourceCode"></div>
-          </div>
-        </div>
-        
-        <div id="tab2" class="tab">
-          <div id="info"></div>
-        </div>
-
-        <div id="tab3" class="tab">
-          <div id="store"></div>
-        </div>
-
-        <div id="tab4" class="tab">
-          <div id="cart"></div>
-        </div>
-
-        <div id="tab5" class="tab">
-          <div id="profile"></div>
-        </div>
-
-        <div id="tab6" class="tab">
-          <div id="paketData"></div>
-        </div>
-
-      </div>
-      
-      <div id="menuBottom"></div>
-
-    </div>
-
-    <div id="histats_counter"></div>
-    <script src="./assets/histats.js"></script>
-    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4801689&101" alt="website page counter" border="0"></a></noscript>
-
-  <script id="firstScript" src="./config/data/intergram.js"></script>
-    <script> 
-      window.intergramId = intergram.id;
-      window.intergramCustomizations = {
-          titleClosed: intergram.titleClosed,
-          titleOpen: intergram.titleOpen,
-          introMessage: intergram.introMessage,
-          autoResponse: intergram.autoResponse,
-          autoNoResponse: intergram.autoNoResponse,
-          mainColor: intergram.mainColor,
-          alwaysUseFloatingButton: intergram.alwaysUseFloatingButton,
-          useExternalButton: true,
-          cookieExpiration: 1,
-          displayMessageTime: true,
-          displayBanner: true,
-          humanReadableIds: true
-      };
-
-      const firstScript = document.getElementById('firstScript')
-      const loadIntergram = () => {
-        let tagIntergram = document.createElement('script');
-        tagIntergram.onload = function() {};
-        tagIntergram.id = `intergram`;
-        tagIntergram.src = `https://telegram-chat-widget-t3ez.onrender.com/js/widget.js`;
-        firstScript.parentNode.insertBefore(tagIntergram, firstScript)
-
-        const checkRoot = setInterval(() => {
-          var intergramRoot = document.getElementById("intergramRoot");
-
-          if (intergramRoot) {
-            clearInterval(checkRoot)
-            intergramRoot.addEventListener("click", function(event) {
-              var chatElement = event.target.closest("div > div > div > div > div");
-
-              if (chatElement) {
-                const childNavbar = document.getElementById("childNavbar");
-                if (childNavbar) {
-                  childNavbar.classList.add("fixed");
-                  childNavbar.classList.add("top-0");
-                  childNavbar.classList.add("z-10");
-                }
-              }
-            });
-          }
-          
-        }, 1000);
-        
-      }
-
-      if (intergram.status) {
-        loadIntergram();
-      }
-      
-    </script>
+	<script>
+		window.location.href = "https://bestore.my.id/demo/vitejs-katalog-produk/"
+	</script>
     
     
   </body>
