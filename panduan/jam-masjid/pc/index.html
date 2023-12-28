@@ -22,7 +22,7 @@
     <!-- image -->
     <!-- <meta property="og:image" content="https://eriksanjaya.com/public/img/index.webp"> -->
     <!-- <meta name="twitter:image" content="https://eriksanjaya.com/public/img/index.webp"> -->
-    <link rel="stylesheet" href="../assets/app.css" />
+    <link rel="stylesheet" href="../../../assets/app.css" />
     <title>Panduan PC</title>
   </head>
   <body id="loginPage" class="bg-slate-800 flex justify-center items-center w-full h-full px-3 py-3">
@@ -39,66 +39,31 @@
             </div>
           </div>
 
-          <p>Panduan Jam Masjid Siap Pakai.</p>
-          
+          <p>Video Panduan Jam Masjid</p>
+
           <div>
-            <p>http://localhost/jammasjid</p>
+            <p>Buka link di bawah ini di browser:</p>
+            <p><a target="_blank" class="text-blue-500" href="http://localhost/jammasjid">http://localhost/jammasjid</a></p>
+            <p class="font-semibold">Login:</p>
             <p>username: 1801</p>
             <p>password: 1801</p>
           </div>
-          
+
           <div>
             <div class="w-full flex flex-col space-y-3">
 
               <div class="w-full flex flex-col space-y-6">
 
-               
+                <div id="showVideo" class="w-full aspect-w-16 aspect-h-9"></div>
 
+                <div class="w-full space-y-2">
 
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/R2I-RGGtiz0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p class="font-semibold">Daftar panduan:</p>
+
+                  <div id="list" class="w-full grid grid-cols-2 lg:grid-cols-3 gap-3"></div>
+                  
                 </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/Uqy5vIcy75o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/Dq1OptQQoKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/fz8IdIBcKec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/PX_eJUJUH4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/EgWQXUiRffg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/mHCin3hm1oY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/x5Qo-VONBjM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/TV1OyCH7WI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/-mV7wTR7mH0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="aspect-w-16 aspect-h-9">
-                  <iframe class="aspect-video" src="https://www.youtube.com/embed/iIZWzmfygqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
+                
               </div>
             </div>
           </div>
@@ -107,5 +72,111 @@
       </div>
     </div>
     
+    <script>
+
+      const list = [
+        {
+          title: "user",
+          link: "https://www.youtube.com/embed/R2I-RGGtiz0",
+
+        },
+        {
+          title: "konten",
+          link: "https://www.youtube.com/embed/Uqy5vIcy75o",
+
+        },
+        {
+          title: "petugas sholat jumat",
+          link: "https://www.youtube.com/embed/Dq1OptQQoKc",
+
+        },
+        {
+          title: "jadwal imam",
+          link: "https://www.youtube.com/embed/fz8IdIBcKec",
+
+        },
+        {
+          title: "jadwal kajian",
+          link: "https://www.youtube.com/embed/PX_eJUJUH4Q",
+
+        },
+        {
+          title: "nama masjid",
+          link: "https://www.youtube.com/embed/EgWQXUiRffg",
+
+        },
+        {
+          title: "waktu sholat",
+          link: "https://www.youtube.com/embed/mHCin3hm1oY",
+
+        },
+        {
+          title: "penyesuaian waktu",
+          link: "https://www.youtube.com/embed/x5Qo-VONBjM",
+
+        },
+        {
+          title: "background",
+          link: "https://www.youtube.com/embed/TV1OyCH7WI4",
+
+        },
+        {
+          title: "tema",
+          link: "https://www.youtube.com/embed/-mV7wTR7mH0",
+
+        },
+        {
+          title: "font",
+          link: "https://www.youtube.com/embed/iIZWzmfygqM",
+
+        },
+        {
+          title: "pindah device",
+          link: "https://www.youtube.com/embed/0Y_Nl0JbcIY",
+
+        },
+        {
+          title: "auto start",
+          link: "https://www.youtube.com/embed/I_UUb-ZjhDE",
+
+        },
+      ]
+      
+      let listDom = ""
+      list.map((val, key) => {
+        listDom += `<div onclick="playVideo('${val.link}', '${val.title}')" class="cursor-pointer w-full flex p-3 bg-slate-800 text-slate-200 rounded-md border">
+                      <p>${val.title}</p>
+                    </div>`
+
+                    
+      })
+
+      const dom_list = document.getElementById('list')
+
+      dom_list.innerHTML = listDom;
+      
+      
+      const playVideo = (link, title) => {
+        let dom = `<iframe class="w-full aspect-video rounded-2xl shadow-2xl shadow-blue-500/30" src="${link}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+        if (title == "background") {
+          dom += `<div class="pt-3">
+              <p class="font-semibold animate-bounce">Jangan lupa tambah limit upload:</p>
+              <ul class="list-outside list-disc">
+                <li>edit file php.ini dengan notepad++ (install dulu jika belum ada), lokasinya ada di C:\\xampp\\php\\php.ini</li>
+              </ul>
+              <p>
+                cari : <br>
+                - post_max_size <br>
+                - upload_max_filesize <br>
+              </p>
+              <p>jadikan nilainya masing-masing 100M</p>
+              <p>jika sudah, buka xampp, run / start kembali apache dan mysql nya.</p>
+            </div>`
+        }
+        
+        document.getElementById('showVideo').innerHTML = dom
+      }
+    </script>
   </body>
 </html>
