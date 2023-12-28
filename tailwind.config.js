@@ -4,6 +4,8 @@ module.exports = {
     "./src/**/*.{html,js}",
     "./qr/**/*.{html,js}",
     "./sale/**/*.{html,js}",
+    "./panduan/**/*.{html,js}",
+    "./panduan/jam-masjid/app/index.html",
     "./*.{html,js}",
   ],
   theme: {
