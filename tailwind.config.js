@@ -6,6 +6,8 @@ module.exports = {
     "./sale/**/*.{html,js}",
     "./panduan/**/*.{html,js}",
     "./panduan/jam-masjid/app/index.html",
+    "./panduan/jam-masjid/app/pro.html",
+    "./panduan/jam-masjid/app/basic.html",
     "./*.{html,js}",
   ],
   theme: {
