@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#1F2937" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="content-language" content="id-ID" />
+    <meta name="author" content="Erik Sanjaya" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="login hotspot mikrotik, login page mikrotik, Template Mikrotik, Template Hotspot"
+    />
+    <meta
+      name="description"
+      content="Jual template hotspot mikrotik premium ringan, elegan, responsive, simple & modern"
+    />
+    <link rel="canonical" href="https://eriksanjaya.com/login-page-22" />
+
+    <meta property="og:title" content="Login Page 22" />
+    <meta
+      property="og:description"
+      content="Jual template hotspot mikrotik premium ringan, elegan, responsive, simple & modern"
+    />
+    <meta
+      property="og:image"
+      content="https://eriksanjaya.com/login-page-22/public/images/main.webp"
+    />
+    <meta property="og:url" content="https://eriksanjaya.com/login-page-22" />
+    <meta property="og:site_name" content="Login Page 22" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="Login Page 22" />
+    <meta
+      name="twitter:description"
+      content="Jual template hotspot mikrotik premium ringan, elegan, responsive, simple & modern"
+    />
+    <meta
+      name="twitter:image"
+      content="https://eriksanjaya.com/login-page-22/public/images/main.webp"
+    />
+    <meta name="twitter:url" content="https://eriksanjaya.com/login-page-22" />
+    <meta name="twitter:site" content="Login Page 22" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload stylesheet -->
+    <link
+      rel="preload"
+      href="./assets/css/style.css?v=241003"
+      type="text/css"
+      as="style"
+    />
+
+    <!-- Fallback stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css?v=241003" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://eriksanjaya.com/logo.ico"
+    />
+    <title>Template Mikrotik</title>
+
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+      }
+    </style>
+
+    <script>
+      let log = console.log;
+      const today = new Date();
+      const year = today.getFullYear();
+
+      let execute = false;
+      let winloc = window.location;
+
+      if (
+        winloc.hostname.includes("localhost") ||
+        winloc.hostname === "127.0.0.1" ||
+        winloc.hostname === "127.0.0.9"
+      ) {
+        execute = false;
+      } else {
+        execute = true;
+      }
+
+      if (execute) {
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "202491035817044");
+        fbq("track", "PageView");
+        fbq("track", "ViewContent");
+      }
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=202491035817044&ev=PageView&noscript=1"
+    /></noscript>
+  </head>
+
+  <body class="bg-slate-900 text-red-500 antialiased">
+    <div
+      id="modal"
+      class="hidden w-full flex-col fixed top-0 mx-auto z-30"
+    ></div>
+
+    <div
+      id="header"
+      class="w-full flex flex-col fixed top-0 mx-auto z-20"
+    ></div>
+
+    <div class="w-full lg:w-5/12 mx-auto bg-sky-100 pt-20 lg:pt-20">
+      <div class="w-full flex flex-col space-y-6">
+        <div class="p-3 w-full flex flex-col space-y-6">
+          <div id="titlePhoto" class="p-3 w-full flex flex-col space-y-6"></div>
+
+          <div
+            id="size"
+            class="w-full flex space-x-3 justify-evenly lg:space-x-3 items-center"
+          ></div>
+
+          <!-- rating -->
+          <div
+            id="rating"
+            class="w-full flex space-x-3 justify-center items-center text-center"
+          ></div>
+
+          <!-- order by jun -->
+          <div
+            id="sizeInfo"
+            class="p-3 w-full flex border border-dashed border-emerald-600 bg-emerald-300 rounded-md"
+          ></div>
+        </div>
+
+        <div id="dom_mauapa" class="w-full flex flex-col bg-slate-50"></div>
+
+        <!-- image slider -->
+        <div class="p-3 w-full flex flex-col space-y-6">
+          <div
+            id="siema"
+            class="w-full flex flex-col space-y-3 justify-center items-center z-10"
+          ></div>
+        </div>
+
+        <!-- fitur -->
+        <div
+          class="p-3 w-full flex flex-col space-y-3 bg-slate-50 text-slate-600"
+        >
+          <p class="text-2xl text-center font-semibold">
+            Difference between Login Page Features <br />22A & 22B
+          </p>
+          <table
+            cellpadding="3"
+            cellspacing="0"
+            id="fiturTable"
+            class="text-lg"
+          >
+            <thead class="bg-violet-500 text-slate-50">
+              <tr>
+                <th class="text-left">Features</th>
+                <th width="50">22A</th>
+                <th width="50">22B</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div
+          class="w-full flex flex-col p-3 space-y-3 bg-slate-50 rounded-2xl text-lg text-slate-700"
+        >
+          <p class="text-2xl font-semibold">There are 2 options</p>
+          <ul class="list-item list-outside list-decimal pl-8 space-y-3">
+            <li>Login Page 22A</li>
+            <li>Login Page 22B (Full Features)</li>
+          </ul>
+        </div>
+
+        <div id="player" class="w-full p-3 rounded-lg"></div>
+
+        <div class="p-3 w-full flex flex-col space-y-6">
+          <div class="w-full flex p-3 bg-slate-50 rounded-2xl">
+            <div class="w-full space-y-3">
+              <div class="w-full flex flex-col">
+                <h2 class="text-center text-2xl font-semibold text-slate-700">
+                  Order Form
+                </h2>
+                <p class="text-center text-lg text-slate-700">
+                  Fill in your data correctly
+                </p>
+              </div>
+
+              <!-- produk utama -->
+              <div
+                id="mainProduct"
+                class="my-12 w-full bg-slate-50 rounded-2xl"
+              ></div>
+
+              <!-- tebus -->
+              <div
+                id="tebus"
+                class="hidden my-12 w-full p-3 bg-slate-50 rounded-2xl border border-blue-900 border-dashed"
+              ></div>
+
+              <!-- <div class="py-3"></div> -->
+
+              <div class="w-full flex flex-col space-y-3">
+                <div class="w-full flex flex-col">
+                  <label for="nama" class="capitalize text-lg text-slate-700"
+                    >name</label
+                  >
+                  <input
+                    type="text"
+                    id="nama"
+                    name="name"
+                    placeholder="Enter your name"
+                    class="w-full px-3 py-2 text-lg text-slate-700 outline-none input-field ring-1 ring-red-700 focus:ring-1 focus:ring-blue-500 bg-blue-50 rounded-lg"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col">
+                  <label for="hp" class="capitalize text-lg text-slate-700"
+                    >Active WhatsApp number
+                  </label>
+                  <input
+                    type="text"
+                    id="hp"
+                    name="phone"
+                    placeholder="Enter your WhatsApp number"
+                    class="w-full px-3 py-2 text-lg text-slate-700 outline-none input-field ring-1 ring-red-700 focus:ring-1 focus:ring-blue-500 bg-blue-50 rounded-lg"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col">
+                  <label for="email" class="capitalize text-lg text-slate-700"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    class="w-full px-3 py-2 text-lg text-slate-700 outline-none input-field ring-1 ring-red-700 focus:ring-1 focus:ring-blue-500 bg-blue-50 rounded-lg"
+                  />
+                </div>
+
+                <div class="py-1"></div>
+
+                <div
+                  id="dns"
+                  class="w-full flex flex-col p-3 border border-slate-500 border-dashed rounded-lg"
+                ></div>
+
+                <div
+                  class="w-full flex py-3 space-x-3 justify-start items-start"
+                >
+                  <input
+                    type="checkbox"
+                    name="syarat"
+                    id="syarat"
+                    class="w-4 h-4 mt-[0.30rem]"
+                  />
+                  <label
+                    for="syarat"
+                    class="text-blue-800 text-lg cursor-pointer select-none"
+                    >I agree to the terms & conditions.
+                  </label>
+                </div>
+
+                <div
+                  class="alert hidden w-full p-3 rounded-md shadow-md bg-amber-400 text-slate-700"
+                ></div>
+
+                <div class="w-full flex flex-col">
+                  <button
+                    id="submit"
+                    onclick="submitForm()"
+                    class="w-full flex flex-col p-3 rounded-lg bg-cyan-700"
+                  >
+                    <p class="w-full text-white text-center text-lg">
+                      I want to order now
+                    </p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden">
+      <input type="text" value="11" id="landpageID" />
+      <div class="bg-cyan-600"></div>
+      <div class="text-emerald-600"></div>
+      <div class="text-rose-500"></div>
+    </div>
+
+    <script>
+      const temperatures = [92.4, 71.0, 76.0, 91.0, 76.0];
+      const total = temperatures.reduce((sum, temp) => sum + temp, 0);
+      const average = (total / temperatures.length).toFixed(1);
+      document.querySelectorAll(".average-temp").forEach((element) => {
+        element.textContent = `${average}°C`;
+      });
+    </script>
+
+    <script>
+      const c_mauApa = {
+        title: "On/Off Features",
+        sub_title: "With this feature, you can make this login page simpler.",
+        lists: [
+          "You can remove <strong>Image Header</strong>.",
+          "You can remove <strong>Running Text</strong>.",
+          "You can remove <strong>Prayer Schedule</strong>.",
+          "You can remove <strong>Audio</strong>.",
+          "You can remove <strong>Voucher Login</strong>.",
+          "You can remove <strong>Member Login</strong>.",
+          "You can remove <strong>Image Slider</strong>.",
+          "You can remove <strong>Internet Packages</strong>.",
+          "You can remove <strong>FAQ</strong>.",
+          "You can remove <strong>Copyright</strong>.",
+          "You can remove <strong>Live Chat</strong>.",
+        ],
+      };
+
+      const c_fitur = {
+        title: "Features",
+        sub_title: "",
+        lists: [
+          "On/Off Features",
+          "Image Header",
+          "Logo, Name & Slogan",
+          "Running Text",
+          "Hijri & Gregorian Date",
+          "Prayer Schedule (PrayTimes)",
+          "Audio",
+          "Voucher & Member Login",
+          "Trial Login & Scan",
+          "Image Slider",
+          "Internet Packages",
+          "FAQ",
+          "Chat",
+          "Style (change colors)",
+          "Expired Mikhmon User",
+          "<strong>Supports Android 5</strong> and above",
+        ],
+      };
+
+      const aColumn = [
+        "y",
+        "n",
+        "y",
+        "n",
+        "n",
+        "n",
+        "n",
+        "y",
+        "y",
+        "n",
+        "y",
+        "n",
+        "n",
+        "n",
+        "y",
+        "y",
+      ];
+      const bColumn = [
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+        "y",
+      ];
+
+      const tableBody = document.querySelector("#fiturTable tbody");
+
+      c_fitur.lists.forEach((fitur, index) => {
+        const row = document.createElement("tr");
+
+        // Kolom Fitur
+        const fiturCell = document.createElement("td");
+        fiturCell.style.borderBottom = "1px dashed #94a3b8"; // Mengatur border bottom dengan dashed
+        fiturCell.innerHTML = fitur;
+        row.appendChild(fiturCell);
+
+        // Kolom A
+        const aCell = document.createElement("td");
+        aCell.style.borderBottom = "1px dashed #94a3b8"; // Mengatur border bottom dengan dashed
+        aCell.classList.add("text-center");
+        aCell.innerHTML =
+          aColumn[index] == "y"
+            ? '<p class="text-emerald-600">&#10004;</p>'
+            : '<p class="text-rose-500">&#10008</p>';
+        row.appendChild(aCell);
+
+        // Kolom B
+        const bCell = document.createElement("td");
+        bCell.style.borderBottom = "1px dashed #94a3b8"; // Mengatur border bottom dengan dashed
+        bCell.classList.add("text-center");
+        bCell.innerHTML =
+          bColumn[index] == "y"
+            ? '<p class="text-emerald-600">&#10004;</p>'
+            : '<p class="text-rose-500">&#10008</p>';
+        row.appendChild(bCell);
+
+        // Tambahkan baris ke tabel
+        tableBody.appendChild(row);
+      });
+    </script>
+
+    <script>
+      let android_support = 5;
+      const syarat_a = [
+        "<strong>1 License</strong> for <strong>1 IP or DNS Name</strong> for personal use, for other IPs or DNS names, purchase again.",
+      ];
+
+      const syarat_tambahan = [];
+
+      const syarat_b = [
+        "<strong>Make sure the IP or DNS name</strong> entered is correct, <strong>no warranty</strong> for incorrect IP or DNS name input.",
+      ];
+    </script>
+
+    <!-- Preload JavaScript -->
+    <link rel="preload" href="./assets/js/siema.min.js" as="script" />
+    <link rel="preload" href="./assets/js/app.min.js?v=241003" as="script" />
+
+    <!-- Fallback script tags -->
+    <script src="./assets/js/siema.min.js" defer></script>
+    <script src="./assets/js/app.min.js?v=241003" defer></script>
+
+    <script>
+      // Memuat API YouTube IFrame
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      var videoId = "";
+
+      if (videoId) {
+        function onYouTubeIframeAPIReady() {
+          createPlayer();
+        }
+
+        function createPlayer() {
+          player = new YT.Player("player", {
+            videoId: videoId,
+            playerVars: {
+              autoplay: 0,
+              controls: 1,
+              rel: 0,
+              loop: 0,
+            },
+            events: {
+              onStateChange: onPlayerStateChange,
+            },
+          });
+        }
+
+        function onPlayerStateChange(event) {
+          // Jika video sudah berakhir (ENDED)
+          if (event.data == YT.PlayerState.ENDED) {
+            player.destroy(); // Hapus player yang ada
+            setTimeout(function () {
+              createPlayer(); // Buat ulang player
+            }, 500); // Tunggu sebentar sebelum membuat ulang player
+          }
+        }
+      }
+
+      const newCookieSet = function (name, value, seconds = 300) {
+        const expirationDate = new Date();
+        expirationDate.setTime(expirationDate.getTime() + seconds * 1000);
+        const encodedValue = encodeURIComponent(value); // Encode value
+        const cookieValue = `${name}=${encodedValue}; expires=${expirationDate.toUTCString()}`;
+        document.cookie = cookieValue;
+      };
+
+      const newCookieGet = function (name) {
+        const cookies = document.cookie.split("; ");
+        for (const cookie of cookies) {
+          const [cookieName, cookieValue] = cookie.split("=");
+          if (cookieName === name) {
+            return decodeURIComponent(cookieValue); // Decode value
+          }
+        }
+        return null;
+      };
+
+      function checkAndReload() {
+        const reloadValue = newCookieGet("lp22-reload");
+
+        if (reloadValue === null || reloadValue === "0") {
+          // Jika cookie 'reload' belum diatur atau bernilai 0, atur menjadi 1 dan reload halaman
+          newCookieSet("lp22-reload", "1"); // Set 'reload' jadi 1 untuk 1 hari
+          location.reload(); // Reload halaman
+        } else {
+          // Interval untuk mengecek jika 'reload' sudah 1
+          const checkReloadInterval = setInterval(() => {
+            if (newCookieGet("lp22-reload") === "1") {
+              log("stop");
+              clearInterval(checkReloadInterval); // Hentikan interval jika 'reload' sudah 1
+            }
+          }, 1000); // Cek setiap 1 detik
+        }
+      }
+
+      // Fungsi ini akan dieksekusi setelah halaman dimuat
+      setTimeout(checkAndReload, 2000); // Check after 2 seconds
+    </script>
+  </body>
+</html>
