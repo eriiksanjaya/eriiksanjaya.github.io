@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="theme-color" content="#1F2937" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="" />
+  <meta http-equiv="content-language" content="id-ID" />
+  <meta name="author" content="Erik Sanjaya" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://eriksanjaya.com/" />
+
+  <meta property="og:title" content="Invoice Template Hotspot" />
+  <meta property="og:description" content="Login page hotspot" />
+  <meta property="og:url" content="https://eriksanjaya.com/" />
+  <meta property="og:site_name" content="Invoice Template Hotspot" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:title" content="Invoice Template Hotspot" />
+  <meta name="twitter:description" content="Login page hotspot" />
+  <meta name="twitter:url" content="https://eriksanjaya.com/" />
+  <meta name="twitter:site" content="Invoice Template Hotspot" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- <link rel="stylesheet" href="../assets/style.css" type="text/css" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="https://eriksanjaya.com/vite.svg" />
+  <title>Invoice Template Hotspot</title>
+
+  <style>
+    body {
+      font-family: "Quicksand", sans-serif;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="invoiceApp" class="w-full flex flex-col bg-sky-100 justify-center items-center px-3 lg:px-0 py-6 xpb-24">
+    <div class="w-full lg:w-6/12 space-y-3">
+      <div class="text-full text-right">
+        <div class="text-2xl font-black">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-500">
+            INVOICE
+          </span>
+        </div>
+      </div>
+
+      <div id="dataAnda" class="w-full space-y-2 bg-white rounded-md shadow-md p-3"></div>
+
+      <div id="dataTrx" class="w-full space-y-2 bg-white rounded-md shadow-md p-3"></div>
+
+      <div class="w-full space-y-2 bg-white rounded-md shadow-md p-3">
+        <p class="font-semibold">Product:</p>
+        <div class="w-full overflow-x-auto">
+          <table class="w-full border">
+            <thead>
+              <tr class="border">
+                <th class="border px-2">
+                  <p class="w-max">No</p>
+                </th>
+                <th class="border px-2">
+                  <p class="w-max">Product</p>
+                </th>
+                <th class="border px-2">
+                  <p class="w-max">Dns Name</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="dataOrder"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="w-full space-y-6 bg-white rounded-md shadow-md p-3">
+        <div class="w-full space-y-3">
+          <div class="w-full flex space-x-3">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+              <path d="M13 11L22 2M22 2H16.6562M22 2V7.34375" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path opacity="0.5"
+                d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2"
+                stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            <p class="font-semibold">Payment:</p>
+          </div>
+
+          <div class="space-y-2">
+            <p>
+              Please make a payment of
+              <span style="
+                    background-color: #fbbf24;
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                  " id="totalBayar" class="font-semibold"></span>
+            </p>
+          </div>
+
+          <div class="w-full flex flex-col space-y-2 justify-center items-center">
+            <p class="w-full text-left">Have a question?</p>
+            <button onclick="tanyaAdmin()"
+              class="w-max flex space-x-3 p-3 rounded-md shadow-md bg-emerald-500 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+              <p>Ask Admin</p>
+            </button>
+          </div>
+
+          <hr>
+
+          <div class="xhidden w-full flex flex-col space-y-2 justify-center items-start">
+            <p><strong>Payment to:</strong></p>
+            <p>
+              <span class="text-blue-500 font-semibold">PayPal: </span>
+              <span>eriiksanjaya@gmail.com</span>
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px dashed #cbd5e1" class="w-full"></div>
+
+          <p>
+            Payment confirmation
+            <strong>MUST UPLOAD PAYMENT PROOF</strong> below.
+          </p>
+          <p style="color: #db2777" class="text-rose-500">
+            If not uploaded, the send button will not appear!!!
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full space-y-2 bg-white rounded-md shadow-md p-3">
+        <p class="font-semibold animate-bounce">
+          Confirm, Upload Payment Proof:
+        </p>
+        <div class="w-full flex space-x-3 justify-center items-center border border-slate-500 rounded-md px-3 py-2">
+          <input type="file" id="upload" class="w-full" />
+          <button style="background-color: #db2777" onclick="handleConfirm()"
+            class="w-max p-3 rounded-md shadow-md bg-rose-500 text-white">
+            Upload
+          </button>
+        </div>
+        <div class="alert hidden w-full p-3 rounded-md shadow-md bg-amber-400 text-slate-700"></div>
+      </div>
+
+      <div id="info" class="w-full hidden space-y-2 bg-white rounded-md shadow-md p-3"></div>
+
+      <div id="paymentImage" class="w-full hidden space-y-2 bg-white rounded-md shadow-md p-3"></div>
+    </div>
+  </div>
+
+  <script>
+    let log = console.log;
+    let winloc = window.location;
+    let execute = false;
+    if (
+      winloc.hostname.includes("localhost") ||
+      winloc.hostname === "127.0.0.1"
+    ) {
+      execute = false;
+    } else {
+      execute = true;
+    }
+
+    const CookieSet = function (name, value, seconds = 300) {
+      const expirationDate = new Date();
+      expirationDate.setTime(expirationDate.getTime() + seconds * 1000);
+      const encodedValue = encodeURIComponent(value); // Encode value
+      const cookieValue = `${name}=${encodedValue}; expires=${expirationDate.toUTCString()}`;
+      document.cookie = cookieValue;
+    };
+
+    const CookieGet = function (name) {
+      const cookies = document.cookie.split("; ");
+      for (const cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split("=");
+        if (cookieName === name) {
+          return decodeURIComponent(cookieValue); // Decode value
+        }
+      }
+      return null;
+    };
+
+    function checkAndReload() {
+      const reloadValue = CookieGet("inv-reload");
+
+      if (reloadValue === null || reloadValue === "0") {
+        // Jika cookie 'relinv-oad' belum diatur atau bernilai 0, atur menjadi 1 dan reload halaman
+        CookieSet("inv-reload", "1"); // Set 'reload' jadi 1 untuk 1 hari
+        location.reload(); // Reload halaman
+      } else {
+        // Interval untuk mengecek jika 'reload' sudah 1
+        const checkReloadInterval = setInterval(() => {
+          if (CookieGet("inv-reload") === "1") {
+            log("stop");
+            clearInterval(checkReloadInterval); // Hentikan interval jika 'reload' sudah 1
+          }
+        }, 1000); // Cek setiap 1 detik
+      }
+    }
+
+    // Fungsi ini akan dieksekusi setelah halaman dimuat
+    window.onload = function () {
+      setTimeout(checkAndReload, 2000); // Check after 2 seconds
+    };
+
+    log(CookieGet("reload"));
+
+    let api_url = `http://localhost:8001/api`;
+
+    // if (execute) {
+    api_url = `https://api-order.eriksanjaya.com`;
+    // }
+
+    let url = winloc.href;
+    if (url.includes("index.html")) {
+      let newUrl = url.replace("/index.html", "");
+      url = newUrl;
+    }
+
+    const infoTrxDone = `<p class="bg-slate-800 text-emerald-500 p-3 rounded-md font-semibold">Transaction Successful</p>
+                <div>
+                    <p>The login page file has been sent to your <strong>Email</strong>.</p>
+                    <p>Please wait 5-10 minutes and check periodically.</p>
+                    <p>There might also be a delay.</p>
+                    <p>Thank you.</p>
+                </div>`;
+
+    let infoTrxConfirm = `<p class="bg-slate-800 text-amber-400 p-3 rounded-md font-semibold">Confirmation Received</p>
+        <div class="w-full space-y-3">
+            <div>
+                <p>Thank you for making the payment.</p>
+                <p>We will check it first.</p>
+                <p>Please be patient.</p>
+                <p>Thank you.</p>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <button onclick="tanyaConfirm()" class="w-max flex space-x-3 p-3 rounded-md shadow-md bg-emerald-500 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                    </svg>
+                    <p>Already paid, please check.</p>
+                </button>
+            </div>
+        </div>`;
+
+    const showAlert = (msg) => {
+      const el_alert = document.querySelector(".alert");
+      el_alert.classList.remove("hidden");
+      el_alert.classList.add("flex");
+      el_alert.innerText = msg;
+
+      setTimeout(() => {
+        el_alert.classList.remove("flex");
+        el_alert.classList.add("hidden");
+      }, 5000);
+    };
+
+    function formatRupiah(nominal) {
+      nominal = nominal.toString().replace(/\D/g, "");
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 0,
+      }).format(nominal);
+    }
+
+    const getTrx = (invoiceNumber) => {
+      fetch(api_url + `/api/order/invoice?number=${invoiceNumber}`, {
+        method: "GET", // Default method adalah GET, jadi bisa dihilangkan
+        headers: {
+          "Content-Type": "application/json", // Gantilah sesuai dengan kebutuhan Anda
+          // Tambahkan header lain jika diperlukan
+        },
+        // mode: 'cors', // Tambahkan mode cors jika permintaan ke domain berbeda
+        // credentials: 'include', // Tambahkan credentials jika Anda perlu mengirim kredensial
+      })
+        .then((response) => {
+          // Periksa status code
+          if (response.status === 200 || response.status === 201) {
+            return response.json();
+          } else {
+            return response.json().then((errorData) => {
+              throw {
+                msg:
+                  errorData.msg ||
+                  "An error occurred while making the request.",
+              };
+            });
+          }
+        })
+        .then((data) => {
+          if (data.msg == "expired") {
+            const invoiceApp = document.getElementById("invoiceApp");
+            invoiceApp.classList.add("hidden");
+            document.body.classList.add("p-3");
+            document.body.classList.add("w-full");
+            document.body.classList.add("justify-center");
+            document.body.classList.add("items-center");
+            document.body.innerHTML = `<p>Invoice Expired</p>
+                    `;
+            return false;
+          }
+
+          const ba = document.getElementById("ba");
+          // ba.innerText = data.trx_invoice;
+
+          const el_dataAnda = document.getElementById("dataAnda");
+          el_dataAnda.innerHTML = `<p class="font-semibold">Your Data:</p>
+                <table class="w-full">
+                    <tr><td width="100">Name</td><td>: ${data.order_nama}</td></tr>
+                    <tr><td>Email</td><td>: ${data.order_email}</td></tr>
+                    <tr><td>Phone</td><td>: ${data.order_hp}</td></tr>
+                </table>`;
+
+          const el_dataTrx = document.getElementById("dataTrx");
+          el_dataTrx.innerHTML = `<p class="font-semibold">Transaction:</p>
+                <table class="w-full">
+                    <tr><td width="100">Invoice</td><td>: ${data.trx_invoice
+            } </td></tr>
+                    <tr><td>Total</td><td>: ${formatRupiah(
+              data.trx_total
+            )}</td></tr>
+                    <tr><td>Discount</td><td>: ${formatRupiah(
+              data.trx_diskon
+            )}</td></tr>
+                    <tr><td>Amount</td><td>: ${formatRupiah(
+              data.trx_total_bayar
+            )}</td></tr>
+                    <tr><td>Date</td><td>: ${data.trx_created_at}</td></tr>
+                    <tr><td>Status</td><td>: ${data.trx_status}</td></tr>
+                </table>`;
+
+          const el_dataOrder = document.getElementById("dataOrder");
+
+          let dom = "";
+
+          data.order
+            .map((val, index) => {
+              dom += `<tr class="border">
+                        <td class="border px-2" align="center">${index + 1}</td>
+                        <td class="border px-2"><p class="w-max">${val.order_produk
+                }</p></td>
+                        <td class="border px-2"><p class="w-max">${val.order_hostname
+                }</p></td>
+                    </tr>`;
+            })
+            .join("");
+
+          el_dataOrder.innerHTML = dom;
+
+          const el_totalBayar = document.getElementById("totalBayar");
+          el_totalBayar.innerText = formatRupiah(data.trx_total_bayar);
+
+          const el_info = document.getElementById("info");
+          const el_paymentImage = document.getElementById("paymentImage");
+          if (data.trx_status == "confirm") {
+            el_info.classList.remove("hidden");
+            el_info.innerHTML = infoTrxConfirm;
+            localStorage.setItem("trxStatus", "confirm");
+          }
+
+          if (data.trx_status == "confirm" || data.trx_status == "done") {
+            el_paymentImage.classList.remove("hidden");
+            el_paymentImage.innerHTML = `<img src="${data.trx_payment_receipt}" alt="upload">`;
+          }
+
+          if (data.trx_status == "done") {
+            el_info.classList.remove("hidden");
+            el_info.innerHTML = infoTrxDone;
+            localStorage.setItem("trxStatus", "done");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    };
+
+    const queryString = window.location.search;
+    let trxStatus = localStorage.getItem("trxStatus");
+    let invoiceNumber = "";
+    if (queryString) {
+      // Hilangkan tanda tanya (?) dari string query
+      const sanitizedQueryString = queryString.slice(1);
+
+      const regex = /number=([^&]+)/;
+      const match = sanitizedQueryString.match(regex);
+
+      if (match) {
+        invoiceNumber = match[1];
+        getTrx(invoiceNumber);
+      }
+    }
+
+    const handleConfirm = () => {
+      const fileInput = document.getElementById("upload");
+      const file = fileInput.files[0];
+
+      // console.log(invoiceNumber)
+
+      if (!file) {
+        showAlert("Pilih file terlebih dahulu.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      fetch(api_url + `/api/order/confirm/${invoiceNumber}`, {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          if (response.status === 200 || response.status === 201) {
+            return response.json();
+          } else {
+            return response.json().then((errorData) => {
+              throw {
+                msg:
+                  errorData.msg ||
+                  "Terjadi kesalahan saat melakukan permintaan.",
+              };
+            });
+          }
+        })
+        .then((result) => {
+          showAlert(result.msg);
+          getTrx(invoiceNumber);
+          // window.location.href = `${url}invoice/?number=${invoice}`
+        })
+        .catch((error) => {
+          if (error && error.msg) {
+            showAlert(error.msg);
+          } else {
+            // Tampilkan pesan umum jika tidak ada pesan khusus
+            showAlert("Terjadi kesalahan saat melakukan permintaan.");
+          }
+        });
+    };
+
+    const tanyaAdmin = () => {
+      window.location = "https://t.me/eriksanjaya";
+    };
+
+    // if (execute) {
+    //     var _0x74 = ["\x65\x72\x69\x6B\x73\x61\x6E\x6A\x61\x79\x61\x2E\x63\x6F\x6D"];
+    //     for (var _0x11 = 0; _0x11 < _0x74[0][_0x74]; _0x11++) {
+    //         _0x74 += String[_0x74[0x1]](_0x74[0][_0x11] + 0x1);
+    //     }
+    //     var _0c87 = window.location.hostname;
+    //     if (_0c87 !== _0x74[0]) document.body.remove()
+    // }
+  </script>
+</body>
+
+</html>
