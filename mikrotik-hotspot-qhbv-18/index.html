@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#1F2937" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="content-language" content="id-ID" />
+    <meta name="author" content="Erik Sanjaya">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="mikrotik hotspot template">
+    <meta name="description" content="responsive mikrotik hotspot template design">
+    <link rel='canonical' href='https://eriiksanjaya.github.io/mikrotik-hotspot-qhbv-18'>
+
+    <meta property="og:title" content="mikrotik hotspot template 18" />
+    <meta property='og:description' content='responsive mikrotik hotspot template design'>
+    <meta property="og:image" content="https://eriiksanjaya.github.io/mikrotik-hotspot-qhbv-18/public/18-f1.webp">
+    <meta property='og:url' content='https://eriiksanjaya.github.io/mikrotik-hotspot-qhbv-18'>
+    <meta property='og:site_name' content='mikrotik hotspot template 18'>
+    <meta property='og:type' content='website'>
+
+    <meta name="twitter:title" content="mikrotik hotspot template 18" />
+    <meta name='twitter:description' content='responsive mikrotik hotspot template design'>
+    <meta name="twitter:image" content="https://eriiksanjaya.github.io/mikrotik-hotspot-qhbv-18/public/18-f1.webp">
+    <meta name='twitter:url' content='https://eriiksanjaya.github.io/mikrotik-hotspot-qhbv-18'>
+    <meta name="twitter:site" content="mikrotik hotspot template 18" />
+
+    <!-- Preload stylesheet -->
+    <link rel="preload" href="./assets/css/style.css?v=250418" type='text/css' as="style" />
+
+    <!-- Fallback stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css?v=250418" />
+
+    <link rel="icon" type="image/x-icon" href="https://eriksanjaya.com/logo.ico">
+    <title>Mikrotik Hotspot Template</title>
+
+    <script>
+        let log = console.log;
+        const today = new Date();
+        const year = today.getFullYear();
+
+        let execute = false;
+        let winloc = window.location;
+
+        if (
+            winloc.hostname.includes("localhost") ||
+            winloc.hostname === "127.0.0.1" ||
+            winloc.hostname === "127.0.0.9"
+        ) {
+            execute = false;
+        } else {
+            execute = true;
+        }
+    </script>
+</head>
+
+<body class="bg-slate-900 text-red-500 antialiased">
+
+    <div id="modal" class="hidden w-full flex-col fixed top-0 mx-auto z-30"></div>
+
+    <div id="header" class="w-full flex flex-col fixed top-0 mx-auto z-20"></div>
+
+    <div class="w-full lg:w-5/12 mx-auto bg-sky-100 pt-20 lg:pt-20">
+
+        <div class="w-full flex flex-col space-y-6">
+
+            <div class="p-3 w-full flex flex-col space-y-6">
+                <div id="titlePhoto" class="p-3 w-full flex flex-col space-y-6"></div>
+
+                <div id="size" class="w-full flex space-x-3 justify-evenly lg:space-x-3 items-center"></div>
+
+                <!-- rating -->
+                <div id="rating" class="w-full flex space-x-3 justify-center items-center text-center"></div>
+
+                <!-- order by jun -->
+                <div id="sizeInfo"
+                    class="p-3 w-full flex border border-dashed border-emerald-600 bg-emerald-200 rounded-md"></div>
+            </div>
+
+            <div id="dom_mauapa" class="w-full flex flex-col bg-slate-50"></div>
+
+            <div class="p-3 w-full flex flex-col space-y-6">
+                <div id="video-container"
+                    class="relative w-full lg:w-10/12 h-full rounded-2xl mx-auto cursor-pointer overflow-hidden xaspect-video"
+                    style="aspect-ratio: 1 / 1;">
+
+                    <!-- Thumbnail -->
+                    <img id="thumbnail" alt="Video Thumbnail" class="absolute inset-0 w-full h-full object-cover z-0">
+
+                    <!-- Overlay gelap -->
+                    <div id="overlay" class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+
+                    <!-- Tombol Play -->
+                    <div id="play-button" class="absolute inset-0 flex items-center justify-center z-10">
+                        <div class="bg-white bg-opacity-75 rounded-full p-4 hover:scale-110 transition-transform">
+                            <svg class="w-10 h-10 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- image slider -->
+            <div class="p-3 w-full flex flex-col space-y-6">
+                <div id="siema" class="w-full flex flex-col space-y-3 justify-center items-center z-10"></div>
+            </div>
+
+            <!-- fitur -->
+            <div class="p-3 w-full flex flex-col space-y-3 bg-slate-50 text-slate-600">
+                <p class="text-2xl text-center font-semibold">FEATURES</p>
+                <table cellpadding="3" cellspacing="0" id="fiturTable" class="text-lg">
+                    <thead class="bg-indigo-900 text-slate-50">
+                        <tr>
+                            <th class="text-left">FEATURES</th>
+                            <th width="50"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="p-3 w-full flex flex-col space-y-6">
+
+                <div class="w-full flex p-3 bg-slate-50 rounded-2xl">
+                    <div class="w-full space-y-3">
+
+                        <div class="w-full flex flex-col">
+                            <h2 class="text-center text-2xl font-semibold text-slate-700">Order Form</h2>
+                            <p class="text-center text-lg text-slate-700">Fill in your data correctly</p>
+                        </div>
+
+                        <!-- produk utama -->
+                        <div id="mainProduct" class="my-12 w-full bg-slate-50 rounded-2xl">
+                        </div>
+
+                        <!-- tebus -->
+                        <div id="tebus"
+                            class="hidden my-12 w-full p-3 bg-slate-50 rounded-2xl border border-blue-900 border-dashed">
+                        </div>
+
+                        <!-- <div class="py-3"></div> -->
+
+                        <div class="w-full flex flex-col space-y-3">
+
+                            <div class="w-full flex flex-col">
+                                <label for="nama" class="capitalize text-lg text-slate-700">Name</label>
+                                <input type="text" id="nama" name="name" placeholder="Enter your name" class="w-full px-3 py-2 text-lg text-slate-700 outline-none input-field ring-1 ring-red-700 focus:ring-1 focus:ring-blue-500
+                                bg-blue-50 rounded-lg">
+                            </div>
+
+                            <div class="w-full flex flex-col">
+                                <label for="hp" class="capitalize text-lg text-slate-700">WhatsApp Number</label>
+                                <input type="text" id="hp" name="phone" placeholder="Enter your WhatsApp number" class="w-full px-3 py-2 text-lg text-slate-700 outline-none input-field ring-1 ring-red-700 focus:ring-1 focus:ring-blue-500
+                                bg-blue-50 rounded-lg">
+                            </div>
+
+                            <div class="w-full flex flex-col">
+                                <label for="email" class="capitalize text-lg text-slate-700">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Enter your email" class="w-full px-3 py-2 text-lg text-slate-700 outline-none input-field ring-1 ring-red-700 focus:ring-1 focus:ring-blue-500
+                                bg-blue-50 rounded-lg">
+                            </div>
+
+                            <div class="py-1"></div>
+
+                            <div id="dns"
+                                class="w-full flex flex-col p-3 border border-slate-500 border-dashed rounded-lg">
+                            </div>
+
+                            <div class="w-full flex py-3 space-x-3 justify-start items-start">
+                                <input type="checkbox" name="syarat" id="syarat" class="w-4 h-4 mt-[0.30rem]">
+                                <label for="syarat" class="text-blue-800 text-lg cursor-pointer select-none">I agree to
+                                    the terms and conditions</label>
+                            </div>
+
+                            <div class=" alert hidden w-full p-3 rounded-md shadow-md bg-amber-400 text-slate-700">
+                            </div>
+
+                            <div class="w-full flex flex-col">
+
+                                <button id="submit" onclick="submitForm()"
+                                    class="w-full flex flex-col p-3 rounded-lg bg-gradient-to-r from-indigo-900 to-indigo-900">
+                                    <p class="w-full text-white text-center text-lg">I want to order now</p>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="hidden">
+        <input type="text" value="18" id="landpageID">
+        <input type="text" value="Purchase" id="pixelEvent">
+        <div class="bg-cyan-600"></div>
+        <div class="text-emerald-600"></div>
+        <div class="text-rose-500"></div>
+    </div>
+
+    <script>
+        const temperatures = [92.4, 71.0, 76.0, 91.0, 76.0];
+        const total = temperatures.reduce((sum, temp) => sum + temp, 0);
+        const average = (total / temperatures.length).toFixed(1);
+        document.querySelectorAll('.average-temp').forEach(element => {
+            element.textContent = `${average}°C`;
+        });
+    </script>
+
+    <script>
+        const c_mauApa = {
+            title: "On/Off Feature",
+            sub_title: "With this feature, you can make the login page much simpler.",
+            lists: [
+                "Want to remove the <strong>Running Text</strong>? You can.",
+                "Want to remove the <strong>Voucher Login</strong>? You can.",
+                "Want to remove the <strong>Member Login</strong>? You can.",
+                "Want to remove the <strong>Internet Packages</strong>? You can.",
+                "Want to remove the <strong>Live Chat</strong>? You can.",
+                "Want to remove the <strong>Copyright</strong>? You can."
+            ]
+        }
+
+        const c_fitur = {
+            title: "Fitur",
+            sub_title: "",
+            lists: [
+                "On/Off Feature",
+                "Logo, Name & Slogan",
+                "Running Text",
+                "Voucher & Member Login",
+                "Trial Login & Scan Qrcode",
+                "Internet Packages",
+                "Chat",
+                "Style (Change Color)",
+                "Expired User",
+                "Supports Android 5 and above",
+            ]
+        }
+
+        const bColumn = ["y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y", "y"];
+
+        const tableBody = document.querySelector("#fiturTable tbody");
+
+        c_fitur.lists.forEach((fitur, index) => {
+            const row = document.createElement("tr");
+
+            // Kolom Fitur
+            const fiturCell = document.createElement("td");
+            fiturCell.style.borderBottom = "1px dashed #94a3b8"; // Mengatur border bottom dengan dashed
+            fiturCell.innerHTML = fitur;
+            row.appendChild(fiturCell);
+
+            // Kolom B
+            const bCell = document.createElement("td");
+            bCell.style.borderBottom = "1px dashed #94a3b8"; // Mengatur border bottom dengan dashed
+            bCell.classList.add('text-center')
+            bCell.innerHTML = bColumn[index] == 'y' ? '<p class="text-emerald-600">&#10004;</p>' : '<p class="text-rose-500">&#10008</p>';
+            row.appendChild(bCell);
+
+            // Tambahkan baris ke tabel
+            tableBody.appendChild(row);
+        });
+        var saleDefault = 59
+    </script>
+
+    <!-- Preload JavaScript -->
+    <link rel="preload" href="./assets/js/siema.min.js" as="script">
+    <link rel="preload" href="./assets/js/app.min.js?v=250418" as="script">
+
+    <!-- Fallback script tags -->
+    <script src="./assets/js/siema.min.js" defer></script>
+    <script src="./assets/js/app.min.js?v=250418" defer></script>
+    <script src="./assets/js/term.js?v=250418" defer></script>
+
+    <script>
+
+        const container = document.getElementById('video-container');
+        const thumbnail = document.getElementById('thumbnail');
+        const overlay = document.getElementById('overlay');
+        const playButton = document.getElementById('play-button');
+
+        thumbnail.src = './public/18-f1.webp';
+
+        container.addEventListener('click', () => {
+            // Hapus thumbnail & play button
+            overlay.remove();
+            thumbnail.remove();
+            playButton.remove();
+
+            // Buat elemen video baru
+            const video = document.createElement('video');
+            video.className = "w-full rounded-lg shadow-lg";
+            video.controls = true;
+            video.autoplay = true;
+
+            const source = document.createElement('source');
+            source.src = "./public/18-fv.mp4"; // Ganti dengan URL video kamu
+            source.type = "video/mp4";
+
+            video.appendChild(source);
+
+            // Masukkan video ke dalam container
+            container.appendChild(video);
+
+            // Play otomatis setelah dimasukkan
+            video.play();
+        });
+
+
+        const newCookieSet = function (name, value, seconds = 86400) {
+            const expirationDate = new Date();
+            expirationDate.setTime(expirationDate.getTime() + seconds * 1000);
+            const encodedValue = encodeURIComponent(value); // Encode value
+            const cookieValue = `${name}=${encodedValue}; expires=${expirationDate.toUTCString()}`;
+            document.cookie = cookieValue;
+        };
+
+        const newCookieGet = function (name) {
+            const cookies = document.cookie.split("; ");
+            for (const cookie of cookies) {
+                const [cookieName, cookieValue] = cookie.split("=");
+                if (cookieName === name) {
+                    return decodeURIComponent(cookieValue); // Decode value
+                }
+            }
+            return null;
+        };
+
+        function checkAndReload() {
+            const reloadValue = newCookieGet('reload');
+
+            if (reloadValue === null || reloadValue === "0") {
+                // Jika cookie 'reload' belum diatur atau bernilai 0, atur menjadi 1 dan reload halaman
+                newCookieSet('reload', '1');  // Set 'reload' jadi 1 untuk 1 hari
+                location.reload();  // Reload halaman
+            } else {
+                // Interval untuk mengecek jika 'reload' sudah 1
+                const checkReloadInterval = setInterval(() => {
+                    if (newCookieGet('reload') === "1") {
+                        log('stop')
+                        clearInterval(checkReloadInterval);  // Hentikan interval jika 'reload' sudah 1
+                    }
+                }, 1000);  // Cek setiap 1 detik
+            }
+        }
+
+        // Fungsi ini akan dieksekusi setelah halaman dimuat
+        setTimeout(checkAndReload, 2000); // Check after 2 seconds
+    </script>
+
+</body>
+
+</html>
