@@ -278,7 +278,7 @@
     };
 
     function formatRupiah(nominal) {
-      nominal = nominal.toString().replace(/\D/g, "");
+      // nominal = nominal.toString().replace(/\D/g, "");
       return new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD",
