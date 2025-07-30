@@ -1,0 +1,437 @@
+{
+  "storeInfo": {
+    "id": "1",
+    "subscriptionStart": "2025-01-01 10:00:00",
+    "subscriptionEnd": "2025-12-31 22:20:00",
+    "headerImage": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/header/header-1.webp",
+    "logo": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/logo/logo-1.webp",
+    "name": "Warung Barokah",
+    "slogan": "Sekali coba, susah move on!",
+    "address": "Jl. Kenyang No. 88, RT 02 RW 04, Kel. Perut Bahagia",
+    "whatsapp": "6289672057180",
+    "latitude": -6.21,
+    "longitude": 106.816667,
+    "rating": "4.9",
+    "openHours": {
+      "monday": { "open": "07:00", "close": "21:00" },
+      "tuesday": { "open": "09:00", "close": "21:00" },
+      "wednesday": { "open": "07:00", "close": "21:00" },
+      "thursday": { "open": "07:00", "close": "21:00" },
+      "friday": { "open": "07:00", "close": "21:00" },
+      "saturday": { "open": "08:00", "close": "22:00" },
+      "sunday": { "open": "08:00", "close": "20:00" }
+    },
+    "socialMedia": {
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/"
+    },
+    "meta": {
+      "title": "Warung Barokah - Sekali coba, susah move on!",
+      "description": "Warung Barokah menyajikan Sekali coba, susah move on! dengan cita rasa autentik.",
+      "keywords": ["warung", "masakan tradisional", "nusantara", "jakarta"]
+    },
+    "lastUpdated": "2025-07-28T10:00:00Z"
+  },
+  "footer": {
+    "logo": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/logo/logo-1.webp",
+    "description": "Warung Barokah - Sekali coba, susah move on, Cita Rasa Autentik",
+    "socialMedia": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/",
+        "icon": "instagram"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://facebook.com/",
+        "icon": "facebook"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://youtube.com/",
+        "icon": "youtube"
+      }
+    ],
+    "contact": {
+      "address": "Jl. Sudirman No. 456",
+      "phone": "+62812-3456-7891",
+      "email": "cs@warungBarokahnnnnn"
+    },
+    "copyright": "Warung Barokah"
+  },
+  "style": {
+    "banner": {
+      "container": {
+        "gradient": {
+          "rotate": "45deg",
+          "colors": ["#16a34a", "#059669", "#0d9488"]
+        },
+        "textColor": "#ffffff"
+      },
+      "iconWrapper": {
+        "background": "#ffffff33"
+      },
+      "textTitle": {
+        "textColor": "#ffffff"
+      },
+      "textDescription": {
+        "textColor": "#ffffff"
+      }
+    },
+    "header": {
+      "card": {
+        "backgroundGradient": {
+          "rotate": "45deg",
+          "colors": ["#e0f2fe", "#eef2ff", "#f3e8ff"]
+        }
+      },
+      "storeName": {
+        "textColor": "#334155"
+      },
+      "slogan": {
+        "textColor": "#475569"
+      },
+      "rating": {
+        "textColor": "#475569",
+        "iconColor": "#facc15"
+      },
+      "hours": {
+        "textColor": "#475569"
+      },
+      "address": {
+        "textColor": "#475569",
+        "iconColor": "#475569"
+      },
+      "logoWrapper": {
+        "background": "#64748b",
+        "borderColor": "#e0f2fe"
+      },
+      "overlay": {
+        "background": "rgba(0,0,0,0.3)"
+      }
+    },
+    "promoSlider": {
+      "title": {
+        "textColor": "#1f2937"
+      },
+      "badge": {
+        "background": "#ef4444",
+        "textColor": "#ffffff"
+      },
+      "overlay": {
+        "gradient": {
+          "rotate": "0deg",
+          "colors": ["#00000099", "#00000066", "transparent"]
+        }
+      },
+      "productName": {
+        "textColor": "#ffffff"
+      },
+      "description": {
+        "textColor": "#f3f4f6"
+      },
+      "price": {
+        "discountColor": "#16a34a",
+        "originalColor": "#d1d5db"
+      },
+      "navButton": {
+        "background": "#ffffff",
+        "iconColor": "#0f172a"
+      },
+      "bullet": {
+        "active": "#16a34a",
+        "inactive": "#d1d5db"
+      }
+    },
+    "searchBar": {
+      "input": {
+        "background": "#ffffff",
+        "borderColor": "#e5e7eb",
+        "focusBorderColor": "#16a34a",
+        "textColor": "#1f2937",
+        "placeholderColor": "#9ca3af"
+      },
+      "icon": {
+        "color": "#94a3b8"
+      }
+    },
+    "categoryMenu": {
+      "background": "#ffffff",
+      "active": {
+        "gradient": {
+          "rotate": "45deg",
+          "colors": ["#16a34a", "#059669", "#0d9488"]
+        },
+        "textColor": "#16a34a",
+        "circleBackground": "#ffffff"
+      },
+      "inactive": {
+        "circleBackground": "#f1f5f9",
+        "textColor": "#475569"
+      }
+    },
+    "productList": {
+      "card": {
+        "background": "#f8fafc",
+        "borderColor": "#e2e8f0",
+        "discountBadge": {
+          "background": "#ef4444",
+          "textColor": "#ffffff"
+        }
+      },
+      "name": {
+        "textColor": "#334155"
+      },
+      "price": {
+        "discountColor": "#16a34a",
+        "originalColor": "#94a3b8"
+      },
+      "emptyState": {
+        "textColor": "#94a3b8"
+      }
+    },
+    "addToCartButton": {
+      "button": {
+        "background": "#16a34a",
+        "hoverBackground": "#16a34a",
+        "textColor": "#ffffff"
+      },
+      "counterButton": {
+        "background": "#94a3b8",
+        "hoverBackground": "#64748b",
+        "textColor": "#ffffff"
+      },
+      "quantityText": {
+        "textColor": "#0f172a"
+      }
+    },
+    "footer": {
+      "container": {
+        "background": "#0f172a",
+        "textColor": "#ffffff"
+      },
+      "sectionTitle": {
+        "textColor": "#e5e7eb"
+      },
+      "text": {
+        "textColor": "#cbd5e1"
+      },
+      "icon": {
+        "color": "#cbd5e1"
+      },
+      "border": {
+        "color": "#64748b"
+      },
+      "copyright": {
+        "textColor": "#cbd5e1"
+      }
+    },
+    "cart": {
+      "drawer": {
+        "background": "#ffffff",
+        "textColor": "#1f2937"
+      },
+      "empty": {
+        "iconColor": "#cbd5e1",
+        "textColor": "#64748b"
+      },
+      "productCard": {
+        "background": "#f8fafc",
+        "titleColor": "#1e293b",
+        "priceColor": "#16a34a",
+        "subtotalColor": "#64748b"
+      },
+      "form": {
+        "labelColor": "#1e293b",
+        "inputBackground": "#ffffff",
+        "inputTextColor": "#1f2937"
+      },
+      "totalBox": {
+        "background": "#f8fafc",
+        "textColor": "#1e293b",
+        "totalColor": "#16a34a"
+      },
+      "alerts": {
+        "errorBackground": "#ef4444",
+        "successBackground": "#10b981",
+        "textColor": "#ffffff"
+      },
+      "checkout": {
+        "backButton": {
+          "textColor": "#475569",
+          "borderColor": "#cbd5e1",
+          "hoverBackground": "#f1f5f9"
+        },
+        "submitButton": {
+          "enabled": {
+            "background": "#10b981",
+            "hoverBackground": "#059669"
+          },
+          "disabled": {
+            "background": "#94a3b8"
+          },
+          "textColor": "#ffffff"
+        }
+      }
+    },
+    "cartButton": {
+      "button": {
+        "background": "#16a34a",
+        "hoverBackground": "#ea580c",
+        "iconColor": "#ffffff",
+        "shadow": true
+      },
+      "badge": {
+        "background": "#ef4444",
+        "textColor": "#ffffff"
+      }
+    }
+  },
+
+  "promoBanner": {
+    "icon": "gift",
+    "title": "Promo Spesial",
+    "description": "Beli 2 gratis 1 untuk semua menu tradisional!"
+  },
+  "categories": [
+    {
+      "id": "",
+      "name": "Semua",
+      "icon": "🧆"
+    },
+    {
+      "id": "makanan",
+      "name": "Makanan",
+      "icon": "🍛"
+    },
+    {
+      "id": "minuman",
+      "name": "Minuman",
+      "icon": "🥤"
+    },
+    {
+      "id": "cemilan",
+      "name": "Cemilan",
+      "icon": "🍿"
+    }
+  ],
+  "promoProducts": [
+    {
+      "id": "1",
+      "name": "Paket Hemat Keluarga",
+      "description": "4 nasi + 4 ayam + 4 es teh",
+      "originalPrice": 25000,
+      "discountPrice": 20000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/slide/promo-paket-keluarga.webp"
+    },
+    {
+      "id": "2",
+      "name": "Menu Spesial Ayam Bakar",
+      "description": "Paket lengkap ayam bakar madu",
+      "originalPrice": 30000,
+      "discountPrice": 30000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/slide/promo-ayam-bakar.webp"
+    },
+    {
+      "id": "3",
+      "name": "Gado-Gado Spesial",
+      "description": "Sayuran segar dengan bumbu kacang khas",
+      "originalPrice": 15000,
+      "discountPrice": 12000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/slide/promo-gado-gado.webp"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Nasi Gudeg Spesial",
+      "price": 30000,
+      "originalPrice": 30000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/gudeg.webp",
+      "category": "makanan",
+      "description": "Nasi gudeg dengan ayam, telur, dan krecek",
+      "isAvailable": true
+    },
+    {
+      "id": "2",
+      "name": "Ayam Bakar Madu",
+      "price": 30000,
+      "originalPrice": 35000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/ayam-bakar.webp",
+      "category": "makanan",
+      "description": "Ayam bakar dengan bumbu madu spesial",
+      "isAvailable": true
+    },
+    {
+      "id": "3",
+      "name": "Soto Ayam",
+      "price": 18000,
+      "originalPrice": 20000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/soto-ayam.webp",
+      "category": "makanan",
+      "description": "Soto ayam kuah bening dengan tauge dan telur",
+      "isAvailable": true
+    },
+    {
+      "id": "4",
+      "name": "Rendang Daging",
+      "price": 35000,
+      "originalPrice": 40000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/udang-goreng.webp",
+      "category": "makanan",
+      "description": "Rendang daging sapi empuk dengan bumbu tradisional",
+      "isAvailable": false
+    },
+    {
+      "id": "5",
+      "name": "Gado-gado",
+      "price": 15000,
+      "originalPrice": 18000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/gado-gado.webp",
+      "category": "makanan",
+      "description": "Gado-gado dengan sayuran segar dan bumbu kacang",
+      "isAvailable": true
+    },
+    {
+      "id": "6",
+      "name": "Es Teh Manis",
+      "price": 8000,
+      "originalPrice": 10000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/es-teh-manis.webp",
+      "category": "minuman",
+      "description": "Es teh manis segar",
+      "isAvailable": true
+    },
+    {
+      "id": "7",
+      "name": "Es Jeruk",
+      "price": 10000,
+      "originalPrice": 12000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/es-jeruk.webp",
+      "category": "minuman",
+      "description": "Es jeruk segar dengan potongan jeruk asli",
+      "isAvailable": true
+    },
+    {
+      "id": "9",
+      "name": "Udang Goreng Krispi",
+      "price": 5000,
+      "originalPrice": 7000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/udang-goreng.webp",
+      "category": "cemilan",
+      "description": "Udang renyah",
+      "isAvailable": true
+    },
+    {
+      "id": "10",
+      "name": "Pisang Goreng",
+      "price": 8000,
+      "originalPrice": 10000,
+      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/pisang-goreng.webp",
+      "category": "cemilan",
+      "description": "Pisang goreng crispy dengan taburan gula",
+      "isAvailable": true
+    }
+  ]
+}
+
