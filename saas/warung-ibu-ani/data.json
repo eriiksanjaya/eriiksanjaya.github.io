@@ -13,7 +13,7 @@
     "longitude": 106.816667,
     "rating": "4.9",
     "openHours": {
-      "monday": { "open": "07:00", "close": "21:00" },
+      "monday": { "open": "06:00", "close": "21:00" },
       "tuesday": { "open": "09:00", "close": "21:00" },
       "wednesday": { "open": "07:00", "close": "21:00" },
       "thursday": { "open": "07:00", "close": "21:00" },
