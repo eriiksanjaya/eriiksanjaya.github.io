@@ -33,8 +33,8 @@
     "lastUpdated": "2025-07-28T10:00:00Z"
   },
   "footer": {
-    "logo": "https://eriiksanjaya.github.io/saas/es-tetis/image/logo.webp",
-    "description": "Es-Tetis - Minuman Estetik, Harga Anti Panik!",
+    "logo": "-",
+    "description": "-",
     "socialMedia": [
       {
         "platform": "instagram",
@@ -223,7 +223,7 @@
         "color": "#e5e7eb"
       },
       "copyright": {
-        "textColor": "#94a3b8"
+        "textColor": "#7c3aed"
       }
     },
     "cart": {
@@ -458,3 +458,4 @@
     }
   ]
 }
+
