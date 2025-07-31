@@ -32,6 +32,7 @@
     },
     "lastUpdated": "2025-07-28T10:00:00Z"
   },
+
   "footer": {
     "logo": "-",
     "description": "-",
@@ -59,6 +60,18 @@
     },
     "copyright": "Es-Tetis."
   },
+
+  "feature": {
+    "promoBanner": true,
+    "header": true,
+    "promoSlider": true,
+    "categoryMenu": true,
+    "searchBar": true,
+    "productList": true,
+    "footer": true,
+    "brandLogo": true
+  },
+
   "style": {
     "banner": {
       "container": {
@@ -458,4 +471,3 @@
     }
   ]
 }
-

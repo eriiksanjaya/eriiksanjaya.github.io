@@ -59,6 +59,18 @@
     },
     "copyright": "Warung Barokah"
   },
+
+  "feature": {
+    "promoBanner": true,
+    "header": true,
+    "promoSlider": true,
+    "categoryMenu": true,
+    "searchBar": true,
+    "productList": true,
+    "footer": true,
+    "brandLogo": true
+  },
+  
   "style": {
     "banner": {
       "container": {
@@ -434,4 +446,3 @@
     }
   ]
 }
-
