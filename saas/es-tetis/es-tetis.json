@@ -26,9 +26,9 @@
       "facebook": "https://facebook.com/"
     },
     "meta": {
-      "title": "Es-Tetis - Minuman Estetik, Harga Anti Panik!",
-      "description": "Warung Barokah menyajikan Sekali coba, susah move on! dengan cita rasa autentik.",
-      "keywords": ["warung", "masakan tradisional", "nusantara", "jakarta"]
+      "title": "",
+      "description": "",
+      "keywords": ["warung"]
     },
     "lastUpdated": "2025-07-28T10:00:00Z"
   },
@@ -61,6 +61,8 @@
     "copyright": "Es-Tetis."
   },
 
+  "productViewMode": "row",
+
   "feature": {
     "promoBanner": true,
     "header": true,
@@ -68,11 +70,21 @@
     "categoryMenu": true,
     "searchBar": true,
     "productList": true,
+    "addToCartButton": true,
     "footer": true,
-    "brandLogo": true
+    "brandLogo": true,
+    "checkout": {
+      "openStreetMap": true
+    }
   },
 
   "style": {
+    "body": {
+      "background": ["#e0e7ff", "#ddd6fe", "#e9d5ff"]
+    },
+    "container": {
+      "background": ["#ffffff"]
+    },
     "banner": {
       "container": {
         "gradient": {

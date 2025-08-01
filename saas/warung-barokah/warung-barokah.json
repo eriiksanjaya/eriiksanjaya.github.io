@@ -9,8 +9,8 @@
     "slogan": "Sekali coba, susah move on!",
     "address": "Jl. Kenyang No. 88, RT 02 RW 04, Kel. Perut Bahagia",
     "whatsapp": "6289672057180",
-    "latitude": -6.21,
-    "longitude": 106.816667,
+    "latitude": -6.999466147754319,
+    "longitude": 107.62882127372754,
     "rating": "4.9",
     "openHours": {
       "monday": { "open": "07:00", "close": "21:00" },
@@ -67,8 +67,12 @@
     "categoryMenu": true,
     "searchBar": true,
     "productList": true,
+    "addToCartButton": true,
     "footer": true,
-    "brandLogo": true
+    "brandLogo": true,
+    "checkout": {
+      "getCurrentPosition": true
+    }
   },
   
   "style": {
@@ -289,7 +293,7 @@
     "cartButton": {
       "button": {
         "background": "#16a34a",
-        "hoverBackground": "#ea580c",
+        "hoverBackground": "#16a34a",
         "iconColor": "#ffffff",
         "shadow": true
       },

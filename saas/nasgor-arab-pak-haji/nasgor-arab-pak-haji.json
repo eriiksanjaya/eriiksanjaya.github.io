@@ -60,6 +60,8 @@
     "copyright": ""
   },
 
+  "productViewMode": "row",
+
   "feature": {
     "promoBanner": true,
     "header": true,
@@ -71,11 +73,17 @@
     "footer": true,
     "brandLogo": true,
     "checkout": {
-      "getCurrentPosition": true
+      "openStreetMap": false
     }
   },
   
   "style": {
+    "body": {
+      "background": ["#e0e7ff", "#ddd6fe", "#e9d5ff"]
+    },
+    "container": {
+      "background": ["#ffffff"]
+    },
     "banner": {
       "container": {
         "gradient": {
@@ -263,7 +271,7 @@
         "inputTextColor": "#1f2937"
       },
       "totalBox": {
-        "background": "#f8fafc",
+        "background": "#f1f5f9",
         "textColor": "#1e293b",
         "totalColor": "#16a34a"
       },
@@ -293,7 +301,7 @@
     "cartButton": {
       "button": {
         "background": "#16a34a",
-        "hoverBackground": "#ea580c",
+        "hoverBackground": "#16a34a",
         "iconColor": "#ffffff",
         "shadow": true
       },
