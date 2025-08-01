@@ -63,7 +63,7 @@
   "feature": {
     "promoBanner": true,
     "header": true,
-    "promoSlider": false,
+    "promoSlider": true,
     "categoryMenu": true,
     "searchBar": true,
     "productList": true,
@@ -329,27 +329,19 @@
   "promoProducts": [
     {
       "id": "1",
-      "name": "Paket Hemat Keluarga",
-      "description": "4 nasi + 4 ayam + 4 es teh",
-      "originalPrice": 25000,
-      "discountPrice": 20000,
-      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/slide/promo-paket-keluarga.webp"
+      "name": "",
+      "description": "",
+      "originalPrice": 0,
+      "discountPrice": 0,
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/slide-1-688c6dc07183f.webp"
     },
     {
       "id": "2",
-      "name": "Menu Spesial Ayam Bakar",
-      "description": "Paket lengkap ayam bakar madu",
-      "originalPrice": 30000,
-      "discountPrice": 30000,
-      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/slide/promo-ayam-bakar.webp"
-    },
-    {
-      "id": "3",
-      "name": "Gado-Gado Spesial",
-      "description": "Sayuran segar dengan bumbu kacang khas",
-      "originalPrice": 15000,
-      "discountPrice": 12000,
-      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/slide/promo-gado-gado.webp"
+      "name": "",
+      "description": "",
+      "originalPrice": 0,
+      "discountPrice": 0,
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/slide-2-688c6dc091811.webp"
     }
   ],
   "products": [
