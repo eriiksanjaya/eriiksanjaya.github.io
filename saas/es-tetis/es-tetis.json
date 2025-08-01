@@ -5,7 +5,7 @@
     "subscriptionEnd": "2025-12-31 22:20:00",
     "headerImage": "https://eriiksanjaya.github.io/saas/es-tetis/image/header.webp",
     "logo": "https://eriiksanjaya.github.io/saas/es-tetis/image/logo.webp",
-    "name": "Es-Tetis",
+    "name": "Es-Tetis Locale",
     "slogan": "Minuman Estetik, Harga Anti Panik!",
     "address": "Jl. Aesthetic Raya No. 14A",
     "whatsapp": "6289672057180",
@@ -146,7 +146,8 @@
       "overlay": {
         "gradient": {
           "rotate": "0deg",
-          "colors": ["#00000099", "#00000066", "transparent"]
+          "colorsX": ["#00000099", "#00000066", "transparent"],
+          "colors": []
         }
       },
       "productName": {

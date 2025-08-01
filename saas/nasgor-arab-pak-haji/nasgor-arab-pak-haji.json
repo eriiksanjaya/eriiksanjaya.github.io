@@ -145,7 +145,8 @@
       "overlay": {
         "gradient": {
           "rotate": "0deg",
-          "colors": ["#00000099", "#00000066", "transparent"]
+          "colorsX": ["#00000099", "#00000066", "transparent"],
+          "colors": ["transparent"]
         }
       },
       "productName": {
