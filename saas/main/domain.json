@@ -1,4 +1,5 @@
 [
   { "domain": "tokokamu.com", "slug": "tokokamu" },
-  { "domain": "localhost", "slug": "gigastore" }
+  { "domain": "localhost", "slug": "gigastore" },
+  { "domain": "localhost:3000", "slug": "gigastore" }
 ]
