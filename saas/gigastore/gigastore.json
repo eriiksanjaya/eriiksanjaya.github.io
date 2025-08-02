@@ -1,0 +1,486 @@
+{
+  "storeInfo": {
+    "id": "1",
+    "subscriptionStart": "2025-01-01 10:00:00",
+    "subscriptionEnd": "2025-12-31 22:20:00",
+    "headerImage": "https://eriiksanjaya.github.io/saas/es-tetis/image/header.webp",
+    "logo": "https://eriiksanjaya.github.io/saas/es-tetis/image/logo.webp",
+    "name": "Es-Tetis Gigastore",
+    "slogan": "Minuman Estetik, Harga Anti Panik!",
+    "address": "Jl. Aesthetic Raya No. 14A",
+    "whatsapp": "6289672057180",
+    "latitude": -6.21,
+    "longitude": 106.816667,
+    "rating": "4.9",
+    "openHours": {
+      "monday": { "open": "10:00", "close": "23:00" },
+      "tuesday": { "open": "10:00", "close": "23:00" },
+      "wednesday": { "open": "10:00", "close": "23:00" },
+      "thursday": { "open": "10:00", "close": "23:00" },
+      "friday": { "open": "10:00", "close": "23:00" },
+      "saturday": { "open": "10:00", "close": "23:00" },
+      "sunday": { "open": "10:00", "close": "23:00" }
+    },
+    "socialMedia": {
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/"
+    },
+    "meta": {
+      "title": "",
+      "description": "",
+      "keywords": ["warung"]
+    },
+    "lastUpdated": "2025-07-28T10:00:00Z"
+  },
+
+  "footer": {
+    "logo": "-",
+    "description": "-",
+    "socialMedia": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/",
+        "icon": "instagram"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://facebook.com/",
+        "icon": "facebook"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://youtube.com/",
+        "icon": "youtube"
+      }
+    ],
+    "contact": {
+      "address": "Jl. Aesthetic Raya No. 14A",
+      "phone": "+62812-3456-7891",
+      "email": "cs@estetis"
+    },
+    "copyright": "Es-Tetis."
+  },
+
+  "productViewMode": "row",
+
+  "feature": {
+    "promoBanner": true,
+    "header": true,
+    "promoSlider": true,
+    "categoryMenu": true,
+    "searchBar": true,
+    "productList": true,
+    "addToCartButton": true,
+    "footer": true,
+    "brandLogo": true,
+    "checkout": {
+      "openStreetMap": true
+    }
+  },
+
+  "style": {
+    "body": {
+      "background": ["#e0e7ff", "#ddd6fe", "#e9d5ff"]
+    },
+    "container": {
+      "background": ["#ffffff"]
+    },
+    "banner": {
+      "container": {
+        "gradient": {
+          "rotate": "45deg",
+          "colors": ["#fce7f3", "#e0f2fe", "#fef9c3"]
+        },
+        "textColor": "#1e293b"
+      },
+      "iconWrapper": {
+        "background": "#ffffff99"
+      },
+      "textTitle": {
+        "textColor": "#334155"
+      },
+      "textDescription": {
+        "textColor": "#475569"
+      }
+    },
+    "header": {
+      "card": {
+        "backgroundGradient": {
+          "rotate": "45deg",
+          "colors": ["#fefce8", "#e0f2fe", "#ede9fe"]
+        }
+      },
+      "storeName": {
+        "textColor": "#0f172a"
+      },
+      "slogan": {
+        "textColor": "#475569"
+      },
+      "rating": {
+        "textColor": "#475569",
+        "iconColor": "#fbbf24"
+      },
+      "hours": {
+        "textColor": "#64748b"
+      },
+      "address": {
+        "textColor": "#64748b",
+        "iconColor": "#94a3b8"
+      },
+      "logoWrapper": {
+        "background": "#fef3c7",
+        "borderColor": "#e0f2fe"
+      },
+      "overlay": {
+        "background": "rgba(255,255,255,0.3)"
+      }
+    },
+    "promoSlider": {
+      "title": {
+        "textColor": "#1e293b"
+      },
+      "badge": {
+        "background": "#fb7185",
+        "textColor": "#ffffff"
+      },
+      "overlay": {
+        "gradient": {
+          "rotate": "0deg",
+          "colorsX": ["#00000099", "#00000066", "transparent"],
+          "colors": []
+        }
+      },
+      "productName": {
+        "textColor": "#1f2937"
+      },
+      "description": {
+        "textColor": "#64748b"
+      },
+      "price": {
+        "discountColor": "#16a34a",
+        "originalColor": "#9ca3af"
+      },
+      "navButton": {
+        "background": "#fef3c7",
+        "iconColor": "#0f172a"
+      },
+      "bullet": {
+        "active": "#f472b6",
+        "inactive": "#e5e7eb"
+      }
+    },
+    "searchBar": {
+      "input": {
+        "background": "#ffffff",
+        "borderColor": "#e0e7ff",
+        "focusBorderColor": "#a5b4fc",
+        "textColor": "#1f2937",
+        "placeholderColor": "#9ca3af"
+      },
+      "icon": {
+        "color": "#94a3b8"
+      }
+    },
+    "categoryMenu": {
+      "background": "#ffffff",
+      "active": {
+        "gradient": {
+          "rotate": "45deg",
+          "colors": ["#fbbf24", "#fb7185", "#a78bfa"]
+        },
+        "textColor": "#1f2937",
+        "circleBackground": "#ffffff"
+      },
+      "inactive": {
+        "circleBackground": "#f3f4f6",
+        "textColor": "#94a3b8"
+      }
+    },
+    "productList": {
+      "card": {
+        "background": "#f9fafb",
+        "borderColor": "#e5e7eb",
+        "discountBadge": {
+          "background": "#fb7185",
+          "textColor": "#ffffff"
+        }
+      },
+      "name": {
+        "textColor": "#334155"
+      },
+      "price": {
+        "discountColor": "#16a34a",
+        "originalColor": "#94a3af"
+      },
+      "emptyState": {
+        "textColor": "#94a3af"
+      }
+    },
+    "addToCartButton": {
+      "button": {
+        "background": "#f472b6",
+        "hoverBackground": "#fb7185",
+        "textColor": "#ffffff"
+      },
+      "counterButton": {
+        "background": "#a5b4fc",
+        "hoverBackground": "#818cf8",
+        "textColor": "#ffffff"
+      },
+      "quantityText": {
+        "textColor": "#1f2937"
+      }
+    },
+    "footer": {
+      "container": {
+        "background": "#f3e8ff",
+        "textColor": "#1e293b"
+      },
+      "sectionTitle": {
+        "textColor": "#7c3aed"
+      },
+      "text": {
+        "textColor": "#475569"
+      },
+      "icon": {
+        "color": "#7c3aed"
+      },
+      "border": {
+        "color": "#e5e7eb"
+      },
+      "copyright": {
+        "textColor": "#7c3aed"
+      }
+    },
+    "cart": {
+      "drawer": {
+        "background": "#ffffff",
+        "textColor": "#1e293b"
+      },
+      "empty": {
+        "iconColor": "#e2e8f0",
+        "textColor": "#94a3af"
+      },
+      "productCard": {
+        "background": "#f9fafb",
+        "titleColor": "#1e293b",
+        "priceColor": "#16a34a",
+        "subtotalColor": "#64748b"
+      },
+      "form": {
+        "labelColor": "#1e293b",
+        "inputBackground": "#ffffff",
+        "inputTextColor": "#1f2937"
+      },
+      "totalBox": {
+        "background": "#fefce8",
+        "textColor": "#1e293b",
+        "totalColor": "#16a34a"
+      },
+      "alerts": {
+        "errorBackground": "#f87171",
+        "successBackground": "#34d399",
+        "textColor": "#ffffff"
+      },
+      "checkout": {
+        "backButton": {
+          "textColor": "#64748b",
+          "borderColor": "#e2e8f0",
+          "hoverBackground": "#f9fafb"
+        },
+        "submitButton": {
+          "enabled": {
+            "background": "#10b981",
+            "hoverBackground": "#059669"
+          },
+          "disabled": {
+            "background": "#d1d5db"
+          },
+          "textColor": "#ffffff"
+        }
+      }
+    },
+    "cartButton": {
+      "button": {
+        "background": "#fb7185",
+        "hoverBackground": "#f43f5e",
+        "iconColor": "#ffffff",
+        "shadow": true
+      },
+      "badge": {
+        "background": "#facc15",
+        "textColor": "#1f2937"
+      }
+    }
+  },
+  "promoBanner": {
+    "icon": "",
+    "title": "Mau Sehat?",
+    "description": "🥤 Ganti Soda-mu dengan Minuman Buah Segar!"
+  },
+  "categories": [
+    {
+      "id": "",
+      "name": "Semua",
+      "icon": "🧆"
+    },
+    {
+      "id": "Boba",
+      "name": "Boba",
+      "icon": "🧋"
+    },
+    {
+      "id": "Buah",
+      "name": "Buah",
+      "icon": "🍓"
+    },
+    {
+      "id": "Kopi",
+      "name": "Kopi",
+      "icon": "☕"
+    },
+    {
+      "id": "Cokelat",
+      "name": "Cokelat",
+      "icon": "🍫"
+    }
+  ],
+  "promoProducts": [
+    {
+      "id": "1",
+      "name": "",
+      "description": "",
+      "originalPrice": 0,
+      "discountPrice": 0,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/promo-kopi-688a356153fe3.webp"
+    },
+    {
+      "id": "2",
+      "name": "",
+      "description": "",
+      "originalPrice": 0,
+      "discountPrice": 0,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/promo-lychee-688a35612bd0f.webp"
+    },
+    {
+      "id": "3",
+      "name": "",
+      "description": "",
+      "originalPrice": 0,
+      "discountPrice": 0,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/promo-manggo-688a3563157c6.webp"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Brown Sugar Boba Milk",
+      "price": 25000,
+      "originalPrice": 28000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/brown-sugar-milk-688a2e1203661.webp",
+      "category": "Boba",
+      "description": "Susu segar dengan brown sugar dan boba kenyal",
+      "isAvailable": true
+    },
+    {
+      "id": "2",
+      "name": "Taro Boba Milk Tea",
+      "price": 24000,
+      "originalPrice": 27000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/taro-boba-milk-tea-688a2e0feacea.webp",
+      "category": "Boba",
+      "description": "Teh taro manis dengan topping boba",
+      "isAvailable": true
+    },
+    {
+      "id": "3",
+      "name": "Matcha Boba Latte",
+      "price": 26000,
+      "originalPrice": 29000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/matcha-boba-latte-688a2e141a1f7.webp",
+      "category": "Boba",
+      "description": "Matcha premium dengan susu dan boba",
+      "isAvailable": true
+    },
+    {
+      "id": "4",
+      "name": "Strawberry Yakult",
+      "price": 23000,
+      "originalPrice": 25000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/strawberry-yakult-688a2e11dd642.webp",
+      "category": "Buah",
+      "description": "Perpaduan yakult, stroberi segar, dan es",
+      "isAvailable": true
+    },
+    {
+      "id": "5",
+      "name": "Mango Smoothie",
+      "price": 24000,
+      "originalPrice": 27000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/mango-smoothie-688a2e0fdcdf1.webp",
+      "category": "Buah",
+      "description": "Smoothie mangga creamy dengan topping nata de coco",
+      "isAvailable": true
+    },
+    {
+      "id": "6",
+      "name": "Lychee Tea Sparkling",
+      "price": 22000,
+      "originalPrice": 25000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/lychee-tea-sparkling-688a2e0d9ee87.webp",
+      "category": "Buah",
+      "description": "Teh leci dengan soda ringan dan buah leci",
+      "isAvailable": true
+    },
+    {
+      "id": "7",
+      "name": "Es Kopi Susu Gula Aren",
+      "price": 20000,
+      "originalPrice": 22000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/es-kopi-susu-gula-arenn-688a2e140bd97.webp",
+      "category": "Kopi",
+      "description": "Espresso, susu segar, dan gula aren khas",
+      "isAvailable": true
+    },
+    {
+      "id": "8",
+      "name": "Jeruk Nipis",
+      "price": 22000,
+      "originalPrice": 25000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/jeruk-nipis-688a2e180847d.webp",
+      "category": "Buah",
+      "description": "",
+      "isAvailable": true
+    },
+    {
+      "id": "9",
+      "name": "Choco Oreo Frappe",
+      "price": 26000,
+      "originalPrice": 29000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/choco-oreo-frappe-688a2e161fbf0.webp",
+      "category": "Cokelat",
+      "description": "Blended es coklat dengan biskuit Oreo dan whipped cream",
+      "isAvailable": true
+    },
+    {
+      "id": "10",
+      "name": "Strawberry",
+      "price": 25000,
+      "originalPrice": 28000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/strawberry-688a2e1612ce5.webp",
+      "category": "Buah",
+      "description": "Campuran susu dan red velvet yang manis dan lembut",
+      "isAvailable": true
+    },
+    {
+      "id": "11",
+      "name": "Strawberry Smoothie",
+      "price": 25000,
+      "originalPrice": 28000,
+      "image": "https://eriiksanjaya.github.io/saas/es-tetis/image/strawberry-smoothie-688a2e0dc4781.webp",
+      "category": "Buah",
+      "description": "Campuran susu dan red velvet yang manis dan lembut",
+      "isAvailable": true
+    }
+  ]
+}
