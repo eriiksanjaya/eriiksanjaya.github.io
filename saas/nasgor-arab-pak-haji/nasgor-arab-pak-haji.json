@@ -9,8 +9,8 @@
     "slogan": "Citarasa khas timur tengah",
     "address": "Alon-alon KBD Driyorejo Gresik",
     "whatsapp": "6281249714873",
-    "latitude": -6.999466147754319,
-    "longitude": 107.62882127372754,
+    "latitude": -7.336193608520527,
+    "longitude": 112.64482352449092,
     "rating": "4.9",
     "openHours": {
       "monday": { "open": "16:00", "close": "22:00" },
@@ -73,7 +73,7 @@
     "footer": true,
     "brandLogo": true,
     "checkout": {
-      "openStreetMap": false
+      "openStreetMap": true
     }
   },
   
@@ -330,6 +330,11 @@
       "icon": "🍛"
     },
     {
+      "id": "topping",
+      "name": "Topping",
+      "icon": "🥙"
+    },
+    {
       "id": "minuman",
       "name": "Minuman",
       "icon": "🥤"
@@ -359,7 +364,7 @@
       "name": "Nasi Goreng Ayam",
       "price": 25000,
       "originalPrice": 25000,
-      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/nasgor-ayam-688c68ee06a3a.webp",
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/nasgor-ayam-688c68ee06a3aa.webp",
       "category": "makanan",
       "description": "",
       "isAvailable": true
@@ -369,13 +374,43 @@
       "name": "Nasi Goreng Telur",
       "price": 17000,
       "originalPrice": 17000,
-      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/nasgor-telur-688c68ee21a68.webp",
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/nasgor-telur-688c68ee21a688.webp",
       "category": "makanan",
       "description": "",
       "isAvailable": true
     },
     {
       "id": "3",
+      "name": "Nasi Goreng Kebab",
+      "price": 35000,
+      "originalPrice": 35000,
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/nasgor-arab-kebab-6896d153509d7.webp",
+      "category": "makanan",
+      "description": "",
+      "isAvailable": true
+    },
+    {
+      "id": "4",
+      "name": "Nasgor 5 Porsi Ayam Utuh",
+      "price": 150000,
+      "originalPrice": 150000,
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/nasgor-5-porsi-ayam-utuh.webp",
+      "category": "makanan",
+      "description": "",
+      "isAvailable": true
+    },
+    {
+      "id": "5",
+      "name": "Kebab Per Tusuk",
+      "price": 20000,
+      "originalPrice": 20000,
+      "image": "https://eriiksanjaya.github.io/saas/nasgor-arab-pak-haji/image/toping-kebab-pertusuk.webp",
+      "category": "topping",
+      "description": "",
+      "isAvailable": true
+    },
+    {
+      "id": "6",
       "name": "Kopi Arab Rempah",
       "price": 7000,
       "originalPrice": 7000,
@@ -385,7 +420,7 @@
       "isAvailable": true
     },
     {
-      "id": "4",
+      "id": "7",
       "name": "Teh Tarik Malaysia (Dingin)",
       "price": 7000,
       "originalPrice": 7000,
@@ -395,7 +430,7 @@
       "isAvailable": true
     },
     {
-      "id": "5",
+      "id": "8",
       "name": "Teh Tarik Malaysia (Panas)",
       "price": 5000,
       "originalPrice": 5000,
