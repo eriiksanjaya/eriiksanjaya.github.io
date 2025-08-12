@@ -4,7 +4,7 @@
     "subscriptionStart": "2025-08-12 11:00:00",
     "subscriptionEnd": "2025-09-12 11:00:00",
     "headerImage": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/header.webp",
-    "logo": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/logo.webpp",
+    "logo": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/logo.webp",
     "name": "SiNaga Kurir",
     "slogan": "Amanah 100% Lokal",
     "address": "Jalan Erlangga No 33A",
@@ -19,7 +19,7 @@
       "thursday": { "open": "08:00", "close": "22:00" },
       "friday": { "open": "08:00", "close": "22:00" },
       "saturday": { "open": "08:00", "close": "22:00" },
-      "sunday": { "open": "08:00", "close": "20:00" }
+      "sunday": { "open": "", "close": true, "info": "Libur (By Request)" }
     },
     "socialMedia": {
       "instagram": "https://instagram.com/",
@@ -65,18 +65,24 @@
     "header": true,
     "promoSlider": true,
     "categoryMenu": false,
-    "searchBar": true,
+    "searchBar": false,
     "productList": true,
     "productDesc": true,
     "addToCartButton": true,
     "footer": true,
     "brandLogo": true,
     "checkout": {
-      "getCurrentPosition": false
+      "getCurrentPosition": true
     }
   },
   
   "style": {
+     "body": {
+      "background": ["#e0e7ff", "#ddd6fe", "#e9d5ff"]
+    },
+    "container": {
+      "background": ["#ffffff"]
+    },
     "banner": {
       "container": {
         "gradient": {
@@ -124,7 +130,7 @@
         "borderColor": "#e0f2fe"
       },
       "overlay": {
-        "background": "rgba(0,0,0,0.3)"
+        "background": "rgba(0,0,0,0.2)"
       }
     },
     "promoSlider": {
@@ -138,7 +144,8 @@
       "overlay": {
         "gradient": {
           "rotate": "0deg",
-          "colors": ["#00000099", "#00000066", "transparent"]
+          "colorsX": ["#00000099", "#00000066", "transparent"],
+          "colors": []
         }
       },
       "productName": {
@@ -310,6 +317,7 @@
     "title": "Biar Kami Antar",
     "description": "Titip dari ibu kota, sampai kedepan rumahmu."
   },
+
   "categories": [
     {
       "id": "",
@@ -332,6 +340,7 @@
       "icon": "🍿"
     }
   ],
+  
   "promoProducts": [
     {
       "id": "1",
@@ -339,7 +348,7 @@
       "description": "",
       "originalPrice": 0,
       "discountPrice": 0,
-      "image": "https://eriiksanjaya.github.io/saas/sinaga-kurir/slide-1.webp"
+      "image": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/slide-1.webp"
     },
     {
       "id": "2",
@@ -347,7 +356,7 @@
       "description": "",
       "originalPrice": 0,
       "discountPrice": 0,
-      "image": "https://eriiksanjaya.github.io/saas/sinaga-kurir/slide-2.webp"
+      "image": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/slide-2.webp"
     }
   ],
   "products": [
@@ -356,17 +365,17 @@
       "name": "Sinaga Jastip",
       "price": 23000,
       "originalPrice": 23000,
-      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/gudeg.webp",
+      "image": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/produk-1.webp",
       "category": "-",
       "description": "23rb / kilo",
       "isAvailable": true
     },
     {
       "id": "2",
-      "name": "Ayam Bakar Madu",
+      "name": "Sinaga Kurir",
       "price": 7000,
       "originalPrice": 7000,
-      "image": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/ayam-bakar.webp",
+      "image": "https://eriiksanjaya.github.io/saas/sinaga-kurir/image/produk-2.webp",
       "category": "-",
       "description": "Mulai 7rb - 20rb",
       "isAvailable": true
