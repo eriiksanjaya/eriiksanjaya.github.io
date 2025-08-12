@@ -68,12 +68,19 @@
     "searchBar": false,
     "productList": true,
     "productDesc": true,
+    "costDisclaimer": true,
     "addToCartButton": true,
     "footer": true,
     "brandLogo": true,
     "checkout": {
       "getCurrentPosition": true
     }
+  },
+
+  "costDisclaimer": {
+    "mean": "harga belum final, kayak kurir.",
+    "title": "Catatan Biaya",
+    "text": "Biaya final akan dihitung setelah barang ditimbang / alamat dikonfirmasi."
   },
   
   "style": {
