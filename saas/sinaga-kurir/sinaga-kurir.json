@@ -73,7 +73,7 @@
     "footer": true,
     "brandLogo": true,
     "checkout": {
-      "getCurrentPosition": true
+      "openStreetMap": true
     }
   },
 
