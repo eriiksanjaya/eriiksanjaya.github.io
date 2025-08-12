@@ -5,7 +5,7 @@
     "subscriptionEnd": "2025-12-31 22:20:00",
     "headerImage": "https://eriiksanjaya.github.io/saas/es-tetis/image/header.webp",
     "logo": "https://eriiksanjaya.github.io/saas/es-tetis/image/logo.webp",
-    "name": "Es-Tetis Locale",
+    "name": "Es-Tetis",
     "slogan": "Minuman Estetik, Harga Anti Panik!",
     "address": "Jl. Aesthetic Raya No. 14A",
     "whatsapp": "6289672057180",
@@ -70,12 +70,29 @@
     "categoryMenu": true,
     "searchBar": true,
     "productList": true,
+    "productDesc": false,
+    "costDisclaimer": false,
     "addToCartButton": true,
     "footer": true,
     "brandLogo": true,
     "checkout": {
-      "openStreetMap": true
+      "openStreetMap": true,
+      "shippingCost": true
     }
+  },
+
+  "costDisclaimer": {
+    "mean": "harga belum final, kayak kurir.",
+    "title": "Catatan Biaya",
+    "text": "Biaya final akan dihitung setelah barang ditimbang / alamat dikonfirmasi."
+  },
+
+  "shippingCostRules": {
+    "baseRatePerKm": 2000,
+    "freeShippingMaxDistanceKm": 0.1,
+    "discounts": [
+      { "minDistanceKm": 10, "discountPercent": 0 }
+    ]
   },
 
   "style": {
