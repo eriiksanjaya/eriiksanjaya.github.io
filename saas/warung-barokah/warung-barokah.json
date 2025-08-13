@@ -5,7 +5,7 @@
     "subscriptionEnd": "2025-12-31 22:20:00",
     "headerImage": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/header/header-1.webp",
     "logo": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/logo/logo-1.webp",
-    "name": "Warung Barokah",
+    "name": "Warung Barokah Local",
     "slogan": "Sekali coba, susah move on!",
     "address": "Jl. Kenyang No. 88, RT 02 RW 04, Kel. Perut Bahagia",
     "whatsapp": "6289672057180",
@@ -32,6 +32,7 @@
     },
     "lastUpdated": "2025-07-28T10:00:00Z"
   },
+
   "footer": {
     "logo": "https://eriiksanjaya.github.io/public/food-store/warung-barokah/logo/logo-1.webp",
     "description": "Warung Barokah - Sekali coba, susah move on, Cita Rasa Autentik",
@@ -59,7 +60,9 @@
     },
     "copyright": "Warung Barokah"
   },
-
+  
+  "productViewMode": "row",
+  
   "feature": {
     "promoBanner": true,
     "header": true,
@@ -67,15 +70,40 @@
     "categoryMenu": true,
     "searchBar": true,
     "productList": true,
+    "productDesc": false,
+    "costDisclaimer": false,
     "addToCartButton": true,
     "footer": true,
     "brandLogo": true,
     "checkout": {
-      "getCurrentPosition": true
+      "openStreetMap": true,
+      "shippingCost": true
     }
+  },
+
+  "costDisclaimer": {
+    "mean": "harga belum final, kayak kurir.",
+    "title": "Catatan Biaya",
+    "text": "Biaya final akan dihitung setelah barang ditimbang / alamat dikonfirmasi."
+  },
+
+  "shippingCostRules": {
+    "baseRatePerKm": 2000,
+    "freeShippingMaxDistanceKm": 0.5,
+    "discounts": [
+      { "minDistanceKm": 10, "discountPercent": 10 },
+      { "minDistanceKm": 15, "discountPercent": 15 },
+      { "minDistanceKm": 20, "discountPercent": 20 }
+    ]
   },
   
   "style": {
+    "body": {
+      "background": ["#e0e7ff", "#ddd6fe", "#e9d5ff"]
+    },
+    "container": {
+      "background": ["#ffffff"]
+    },
     "banner": {
       "container": {
         "gradient": {
