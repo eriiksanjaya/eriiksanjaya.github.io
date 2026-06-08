@@ -204,8 +204,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             padding: 2.5rem 1.5rem 1rem 1.5rem;
             box-sizing: border-box;
+            width: 100%;
+            text-align: center;
         }
 
         .scanner-ill-icon {
@@ -217,7 +220,7 @@
             background-color: #f0f3ff;
             border-radius: 9999px;
             color: #6366f1;
-            margin-bottom: 1.5rem;
+            margin: 0 auto 1.5rem auto;
             box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
         }
 
@@ -230,7 +233,9 @@
             font-size: 1.25rem;
             font-weight: 700;
             color: #1e293b;
-            margin: 0 0 0.5rem 0;
+            margin: 0 auto 0.5rem auto;
+            text-align: center;
+            width: 100%;
         }
 
         .scanner-ill-desc {
@@ -239,7 +244,8 @@
             text-align: center;
             max-width: 280px;
             line-height: 1.5;
-            margin: 0 0 1.5rem 0;
+            margin: 0 auto 1.5rem auto;
+            width: 100%;
         }
 
         /* Main Theme / Font */
@@ -709,7 +715,7 @@
                                     '</svg>' +
                                     '</div>' +
                                     '<h3 class="scanner-ill-title">Pindai QR Code</h3>' +
-                                    '<p class="scanner-ill-desc">Izinkan akses kamera perangkat Anda untuk mulai memindai voucher atau link login.</p>';
+                                    '<p class="scanner-ill-desc">Izinkan akses kamera perangkat Anda untuk mulai memindai voucher atau link.</p>';
 
                                 dashboard.insertBefore(wrapper, dashboard.firstChild);
                             } else {
