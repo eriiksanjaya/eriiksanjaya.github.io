@@ -650,6 +650,19 @@
                 });
             }
 
+            // Reveal scanner region when start button is clicked
+            var readerEl = document.getElementById('reader');
+            if (readerEl) {
+                readerEl.addEventListener('click', function (e) {
+                    if (e.target && e.target.id === 'html5-qrcode-button-camera-start') {
+                        var scanRegion = document.getElementById('reader__scan_region');
+                        if (scanRegion) {
+                            scanRegion.style.setProperty('display', 'block', 'important');
+                        }
+                    }
+                });
+            }
+
             function initializeScanner() {
                 html5QrcodeScanner = new Html5QrcodeScanner(
                     "reader",
@@ -663,6 +676,15 @@
                 );
 
                 html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+
+                // Use a temporary interval to hide the scan region as soon as it exists, then clear the interval
+                var hideInterval = setInterval(function () {
+                    var scanRegion = document.getElementById('reader__scan_region');
+                    if (scanRegion) {
+                        scanRegion.style.setProperty('display', 'none', 'important');
+                        clearInterval(hideInterval);
+                    }
+                }, 50);
             }
 
             function onScanSuccess(decodedText, decodedResult) {
