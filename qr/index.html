@@ -250,7 +250,7 @@
 
         /* Main Theme / Font */
         body {
-            background-color: #f8fafc;
+            background-color: #e2e8f0;
             min-height: 100vh;
             margin: 0;
             padding: 0;
@@ -439,6 +439,85 @@
         .branding-link:hover .branding-text {
             color: #4f46e5;
         }
+
+        /* Captive Portal Banner styling */
+        .captive-banner {
+            background-color: #fff7ed;
+            border: 1px solid #ffedd5;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.1);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .banner-icon-wrapper {
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #ffedd5;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+            color: #f97316;
+        }
+
+        .banner-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+
+        .banner-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #ea580c;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .banner-desc {
+            font-size: 0.85rem;
+            color: #7c2d12;
+            line-height: 1.5;
+            margin: 0 0 1.25rem 0;
+        }
+
+        .btn-secondary {
+            width: 100%;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 0.875rem 1.5rem;
+            border-radius: 5rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.3);
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px -3px rgba(249, 115, 22, 0.4);
+        }
+
+        .btn-secondary:active {
+            transform: translateY(0);
+        }
+
+        .banner-ios-note {
+            font-size: 0.8rem;
+            color: #9a3412;
+            margin: 0.75rem 0 0 0;
+            line-height: 1.4;
+        }
     </style>
 </head>
 
@@ -448,6 +527,28 @@
 
     <!-- Main Content -->
     <div class="main-content">
+
+        <!-- Captive Portal Warning Card -->
+        <div id="captive-portal-banner" class="captive-banner">
+            <div class="banner-icon-wrapper">
+                <svg class="banner-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                    </path>
+                </svg>
+            </div>
+            <h4 class="banner-title">Kendala Kamera Captive Portal</h4>
+            <p class="banner-desc">Kamera handphone seringkali tidak diizinkan terbuka di dalam halaman login/captive
+                portal. Silakan buka di browser utama HP Anda.</p>
+            <button id="btn-open-browser" class="btn-secondary">
+                Buka di Browser (Chrome/Samsung)
+            </button>
+            <p class="banner-ios-note" id="ios-note" style="display: none;">
+                Pengguna iPhone: Ketuk ikon menu titik tiga/bagikan di pojok layar, lalu pilih <strong>Buka di
+                    Safari</strong>.
+            </p>
+        </div>
 
         <!-- Scanner Container -->
         <div class="scanner-container">
@@ -495,6 +596,59 @@
         document.addEventListener('DOMContentLoaded', function () {
             var html5QrcodeScanner = null;
             var scannedValue = "";
+
+            function isCaptivePortalOrWebView() {
+                var ua = navigator.userAgent || navigator.vendor || window.opera;
+                var isAndroid = /Android/i.test(ua);
+                var isIOS = /iPhone|iPad|iPod/i.test(ua);
+
+                if (isAndroid) {
+                    var isWebView = /Version\/\d+\.\d+/i.test(ua) || /\bwv\b/i.test(ua);
+                    var isFullBrowser = /SamsungBrowser|MiuiBrowser|VivoBrowser|OppoBrowser|HeyTapBrowser|UCBrowser|Chrome/i.test(ua);
+                    // Exclude standard browsers on Android unless they explicitly have WebView tokens
+                    if (isFullBrowser && !/\bwv\b/i.test(ua)) {
+                        return false;
+                    }
+                    return isWebView;
+                }
+                if (isIOS) {
+                    // Exclude major standard iOS browsers
+                    if (/CriOS|FxiOS|Version/i.test(ua)) {
+                        return false;
+                    }
+                    return !/Safari/i.test(ua);
+                }
+                return false;
+            }
+
+            // Detect and show banner
+            var isCP = isCaptivePortalOrWebView();
+            var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+            if (isCP) {
+                var banner = document.getElementById('captive-portal-banner');
+                if (banner) {
+                    banner.style.display = 'flex';
+                }
+
+                if (isIOS) {
+                    var iosNote = document.getElementById('ios-note');
+                    var openBtn = document.getElementById('btn-open-browser');
+                    if (iosNote) iosNote.style.display = 'block';
+                    if (openBtn) openBtn.style.display = 'none';
+                }
+            }
+
+            // Intent scheme launcher for Android
+            var openBtnEl = document.getElementById('btn-open-browser');
+            if (openBtnEl) {
+                openBtnEl.addEventListener('click', function () {
+                    var currentUrl = window.location.href;
+                    var urlWithoutScheme = currentUrl.replace(/^https?:\/\//, '');
+                    var intentUrl = "intent://" + urlWithoutScheme + "#Intent;scheme=https;action=android.intent.action.VIEW;end";
+                    window.location.href = intentUrl;
+                });
+            }
 
             function initializeScanner() {
                 html5QrcodeScanner = new Html5QrcodeScanner(
