@@ -650,14 +650,21 @@
                 });
             }
 
-            // Reveal scanner region when start button is clicked
+            // Reveal or hide scanner region when start/stop button is clicked
             var readerEl = document.getElementById('reader');
             if (readerEl) {
                 readerEl.addEventListener('click', function (e) {
-                    if (e.target && e.target.id === 'html5-qrcode-button-camera-start') {
-                        var scanRegion = document.getElementById('reader__scan_region');
-                        if (scanRegion) {
-                            scanRegion.style.setProperty('display', 'block', 'important');
+                    if (e.target) {
+                        if (e.target.id === 'html5-qrcode-button-camera-start') {
+                            var scanRegion = document.getElementById('reader__scan_region');
+                            if (scanRegion) {
+                                scanRegion.style.setProperty('display', 'block', 'important');
+                            }
+                        } else if (e.target.id === 'html5-qrcode-button-camera-stop') {
+                            var scanRegion = document.getElementById('reader__scan_region');
+                            if (scanRegion) {
+                                scanRegion.style.setProperty('display', 'none', 'important');
+                            }
                         }
                     }
                 });
