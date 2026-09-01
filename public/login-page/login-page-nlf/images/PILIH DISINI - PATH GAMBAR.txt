@@ -1,0 +1,1 @@
+Letakkan gambar di: public/login-page-nlf/images/ (nama file sesuai data.js)

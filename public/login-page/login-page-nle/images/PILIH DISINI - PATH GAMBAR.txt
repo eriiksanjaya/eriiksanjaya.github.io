@@ -1,0 +1,1 @@
+Letakkan gambar di: public/login-page-nle/images/ (nama file sesuai data.js)

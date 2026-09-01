@@ -1,0 +1,1 @@
+Letakkan gambar di: public/login-page-21/images/ (nama file sesuai data.js)
